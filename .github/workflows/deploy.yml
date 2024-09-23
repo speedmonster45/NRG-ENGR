@@ -36,8 +36,10 @@ jobs:
         bundle install
 
     - name: Build Jekyll site
-      cd NRG-ENGR-jekyll
-      run: bundle exec jekyll build
+
+      run: |
+        cd NRG-ENGR-jekyll
+        bundle exec jekyll build
 
     - name: Install AWS CLI v2
       run: |

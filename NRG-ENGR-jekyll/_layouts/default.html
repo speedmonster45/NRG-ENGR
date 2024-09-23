@@ -1,13 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+<!-- <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{{ page.title }} - NRG Engineering</title>
     <link rel="stylesheet" href="/assets/css/output.css">
-   <!--
-    <script src="/assets/js/hamburgerMenu.js"></script>-->
-    <!-- Tailwind CSS Output -->
+    <script src="/assets/js/hamburgerMenu.js"></script>
+    Tailwind CSS Output 
+
+</head> -->
+<head> 
+    {% include configuration.html %}
 </head>
 <body class="bg-gray-100 font-sans">
 
@@ -18,16 +21,12 @@
         <h1 class="text-white text-5xl font-bold drop-shadow-lg">NRG-ENGR</h1>
         {% include hamburgerMenu.html %}
     </div>
+<!-- Include Blog Upload Calendar -->
+    {% include blogCalendar.html %}
 
     <!-- Page content -->
     <main>
         {{ content }}
-
-        <!-- Include Recent Blog Posts -->
-        {% include recentBlogPosts.html %}
-
-        <!-- Include Blog Upload Calendar -->
-        {% include blogCalendar.html %}
     </main>
 
 </body>

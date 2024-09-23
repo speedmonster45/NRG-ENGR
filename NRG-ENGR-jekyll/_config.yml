@@ -1,0 +1,3 @@
+title: NRG Engineering
+baseurl: "" # The subpath of your site, e.g. /blog (leave empty for root)
+url: "http://localhost:4000"

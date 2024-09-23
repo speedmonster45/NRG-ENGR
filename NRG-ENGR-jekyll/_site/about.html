@@ -1,0 +1,5584 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About - NRG Engineering</title>
+    <link rel="stylesheet" href="/assets/css/output.css">
+   <!--
+    <script src="/assets/js/hamburgerMenu.js"></script>-->
+    <!-- Tailwind CSS Output -->
+</head>
+<body class="bg-gray-100 font-sans">
+
+    <!-- Include the splash screen for login and TOS -->
+	<script>
+            function showSplashScreen() {
+            const splashScreen = document.getElementById('splashScreen');
+            splashScreen.classList.remove('hidden');
+        }
+
+        function acceptTerms() {
+            const splashScreen = document.getElementById('splashScreen');
+            splashScreen.classList.add('hidden');
+        }
+
+        window.onload = function() {
+            const firstVisit = !localStorage.getItem('visited');
+            if (firstVisit) {
+                showSplashScreen();
+                localStorage.setItem('visited', 'true');
+            }
+        }
+</script>
+
+<!-- Include the splash screen for login and TOS -->
+    <div id="splashScreen" class="fixed inset-0 bg-black bg-opacity-80 flex items-center justify-center text-white hidden">
+        <div class="text-center space-y-4">
+            <h2 class="text-3xl font-bold">stay out of the Woodland Blog, this is my home</h2>
+            <p>Please log in to continue:</p>
+            <form class="space-y-2">
+                <input type="text" placeholder="Username" required class="w-full p-2 text-black rounded">
+                <input type="password" placeholder="Password" required class="w-full p-2 text-black rounded">
+                <button type="submit" class="block w-full bg-green-600 text-white py-2 rounded">Login</button>
+            </form>
+            <p>
+                <input type="checkbox" required class="mr-2">
+                I agree to the <a href="#" class="underline">Terms of Service</a>
+            </p>
+            <button onclick="acceptTerms()" class="bg-green-600 py-2 px-4 rounded">Continue</button>
+        </div>
+    </div>
+   
+    <!-- Banner with hamburger -->
+    <div class="banner bg-cover bg-center h-64 flex justify-between items-center px-5" style="background-image: url('/assets/images/home_banner.jpeg');">
+        <h1 class="text-white text-5xl font-bold drop-shadow-lg">NRG-ENGR</h1>
+        <head>
+    <link rel="stylesheet" href="assets/css/components.css">
+</head>
+<script>
+    function toggleMenu() {
+        const menus = document.getElementsByClassName('menu');
+        for(let i = 0; i < menus.length; i++) {
+            menus[i].classList.toggle('hidden');
+        }
+    }
+</script>    
+
+<div id="hamburger" class="hamburger space-y-1 cursor-pointer" onclick="toggleMenu()">
+    <div class="w-8 h-1 bg-white"></div>
+    <div class="w-8 h-1 bg-white"></div>
+    <div class="w-8 h-1 bg-white"></div>
+</div>
+
+<nav class="menu hidden">
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="contact.html">Contact</a></li>
+    </ul>
+</nav>
+
+<div class="menu hidden absolute top-16 right-5 bg-black bg-opacity-70 text-white p-4 rounded-lg space-y-2">
+    <a href="index.html" class="block">Home</a>
+    <a href="about.html" class="block">About</a>
+    <a href="contact.html" class="block">Contact</a>
+    <a href="services.html" class="block">Services</a>
+</div>
+    </div>
+
+    <!-- Page content -->
+    <main>
+        <section class="bg-blue-500 text-white p-6">
+  <h1 class="text-4xl font-bold mb-4">About NRG Engineering</h1>
+  <p class="text-lg">
+    Welcome to NRG Engineering, where innovation and creativity meet to create solutions that transform industries.
+    We specialize in advanced engineering solutions, tailored to meet your specific needs.
+  </p>
+</section>
+
+<section class="p-6 mt-6">
+  <h2 class="text-2xl font-semibold mb-4">Our Mission</h2>
+  <p class="text-lg">
+    Our mission is to drive innovation through engineering excellence, ensuring the highest quality results for our clients.
+  </p>
+</section>
+
+<section class="p-6 mt-6">
+  <h2 class="text-2xl font-semibold mb-4">Contact Us</h2>
+  <p class="text-lg">
+    Reach out to us to learn more about how we can help you take your projects to the next level.
+  </p>
+</section>
+
+        <!-- Include Recent Blog Posts -->
+        <!-- _includes/recentBlogPosts.html -->
+<section class="py-10 px-5" id="section1">
+    <h2 class="text-3xl font-bold mb-5">Most Recent Blog Post</h2>
+    <div class="border-b pb-4">
+        <h3 class="text-2xl font-semibold">Blog Title</h3>
+        <p class="mt-2">This is a placeholder for your most recent blog post. You can edit this section to display dynamic blog posts in the future.</p>
+    </div>
+</section>
+
+        <!-- Include Blog Upload Calendar -->
+        <!-- _includes/BlogCalendar.html -->
+<div class="blog-calendar">
+    <h2 class="text-3xl font-bold mb-5">Blog Upload Calendar</h2>
+    <table class="table-auto w-full border-collapse border border-gray-300">
+        <thead>
+            <tr class="bg-gray-200">
+                <th class="border px-4 py-2">Sun</th>
+                <th class="border px-4 py-2">Mon</th>
+                <th class="border px-4 py-2">Tue</th>
+                <th class="border px-4 py-2">Wed</th>
+                <th class="border px-4 py-2">Thu</th>
+                <th class="border px-4 py-2">Fri</th>
+                <th class="border px-4 py-2">Sat</th>
+            </tr>
+        </thead>
+        <tbody>
+            
+            
+            
+
+            <!-- Loop over the days of the month -->
+            
+            
+            <tr>
+                <!-- Loop over the days of the week (Sun to Sat) -->
+                
+                    
+
+                    
+                    
+                    
+                    <!-- Check if there's a post on this day -->
+                    
+                        
+                            
+                            <td class="border px-4 py-2 bg-green-200">
+                                <a href="/2024/09/19/dealing_with_mental_health.html">1</a>
+                            </td>
+                        
+                    
+                        
+                            
+                            <td class="border px-4 py-2 bg-green-200">
+                                <a href="/2024/08/27/ux-designs.MARKUP">1</a>
+                            </td>
+                        
+                    
+
+                    <!-- If no post found, show an empty cell -->
+                    
+                
+                    
+
+                    
+                    
+                    
+                    <!-- Check if there's a post on this day -->
+                    
+                        
+                            
+                            <td class="border px-4 py-2 bg-green-200">
+                                <a href="/2024/09/19/dealing_with_mental_health.html">1</a>
+                            </td>
+                        
+                    
+                        
+                            
+                            <td class="border px-4 py-2 bg-green-200">
+                                <a href="/2024/08/27/ux-designs.MARKUP">1</a>
+                            </td>
+                        
+                    
+
+                    <!-- If no post found, show an empty cell -->
+                    
+                
+                    
+
+                    
+                    
+                    
+                    <!-- Check if there's a post on this day -->
+                    
+                        
+                            
+                            <td class="border px-4 py-2 bg-green-200">
+                                <a href="/2024/09/19/dealing_with_mental_health.html">1</a>
+                            </td>
+                        
+                    
+                        
+                            
+                            <td class="border px-4 py-2 bg-green-200">
+                                <a href="/2024/08/27/ux-designs.MARKUP">1</a>
+                            </td>
+                        
+                    
+
+                    <!-- If no post found, show an empty cell -->
+                    
+                
+                    
+
+                    
+                    
+                    
+                    <!-- Check if there's a post on this day -->
+                    
+                        
+                            
+                            <td class="border px-4 py-2 bg-green-200">
+                                <a href="/2024/09/19/dealing_with_mental_health.html">1</a>
+                            </td>
+                        
+                    
+                        
+                            
+                            <td class="border px-4 py-2 bg-green-200">
+                                <a href="/2024/08/27/ux-designs.MARKUP">1</a>
+                            </td>
+                        
+                    
+
+                    <!-- If no post found, show an empty cell -->
+                    
+                
+                    
+
+                    
+                    
+                    
+                    <!-- Check if there's a post on this day -->
+                    
+                        
+                            
+                            <td class="border px-4 py-2 bg-green-200">
+                                <a href="/2024/09/19/dealing_with_mental_health.html">1</a>
+                            </td>
+                        
+                    
+                        
+                            
+                            <td class="border px-4 py-2 bg-green-200">
+                                <a href="/2024/08/27/ux-designs.MARKUP">1</a>
+                            </td>
+                        
+                    
+
+                    <!-- If no post found, show an empty cell -->
+                    
+                
+                    
+
+                    
+                    
+                    
+                    <!-- Check if there's a post on this day -->
+                    
+                        
+                            
+                            <td class="border px-4 py-2 bg-green-200">
+                                <a href="/2024/09/19/dealing_with_mental_health.html">1</a>
+                            </td>
+                        
+                    
+                        
+                            
+                            <td class="border px-4 py-2 bg-green-200">
+                                <a href="/2024/08/27/ux-designs.MARKUP">1</a>
+                            </td>
+                        
+                    
+
+                    <!-- If no post found, show an empty cell -->
+                    
+                
+                    
+
+                    
+                    
+                    
+                    <!-- Check if there's a post on this day -->
+                    
+                        
+                            
+                            <td class="border px-4 py-2 bg-green-200">
+                                <a href="/2024/09/19/dealing_with_mental_health.html">1</a>
+                            </td>
+                        
+                    
+                        
+                            
+                            <td class="border px-4 py-2 bg-green-200">
+                                <a href="/2024/08/27/ux-designs.MARKUP">1</a>
+                            </td>
+                        
+                    
+
+                    <!-- If no post found, show an empty cell -->
+                    
+                
+            </tr>
+            
+            
+            <tr>
+                <!-- Loop over the days of the week (Sun to Sat) -->
+                
+                    
+
+                    
+                    
+                    
+                    <!-- Check if there's a post on this day -->
+                    
+                        
+                            
+                            <td class="border px-4 py-2 bg-green-200">
+                                <a href="/2024/09/19/dealing_with_mental_health.html">2</a>
+                            </td>
+                        
+                    
+                        
+                            
+                            <td class="border px-4 py-2 bg-green-200">
+                                <a href="/2024/08/27/ux-designs.MARKUP">2</a>
+                            </td>
+                        
+                    
+
+                    <!-- If no post found, show an empty cell -->
+                    
+                
+                    
+
+                    
+                    
+                    
+                    <!-- Check if there's a post on this day -->
+                    
+                        
+                            
+                            <td class="border px-4 py-2 bg-green-200">
+                                <a href="/2024/09/19/dealing_with_mental_health.html">2</a>
+                            </td>
+                        
+                    
+                        
+                            
+                            <td class="border px-4 py-2 bg-green-200">
+                                <a href="/2024/08/27/ux-designs.MARKUP">2</a>
+                            </td>
+                        
+                    
+
+                    <!-- If no post found, show an empty cell -->
+                    
+                
+                    
+
+                    
+                    
+                    
+                    <!-- Check if there's a post on this day -->
+                    
+                        
+                            
+                            <td class="border px-4 py-2 bg-green-200">
+                                <a href="/2024/09/19/dealing_with_mental_health.html">2</a>
+                            </td>
+                        
+                    
+                        
+                            
+                            <td class="border px-4 py-2 bg-green-200">
+                                <a href="/2024/08/27/ux-designs.MARKUP">2</a>
+                            </td>
+                        
+                    
+
+                    <!-- If no post found, show an empty cell -->
+                    
+                
+                    
+
+                    
+                    
+                    
+                    <!-- Check if there's a post on this day -->
+                    
+                        
+                            
+                            <td class="border px-4 py-2 bg-green-200">
+                                <a href="/2024/09/19/dealing_with_mental_health.html">2</a>
+                            </td>
+                        
+                    
+                        
+                            
+                            <td class="border px-4 py-2 bg-green-200">
+                                <a href="/2024/08/27/ux-designs.MARKUP">2</a>
+                            </td>
+                        
+                    
+
+                    <!-- If no post found, show an empty cell -->
+                    
+                
+                    
+
+                    
+                    
+                    
+                    <!-- Check if there's a post on this day -->
+                    
+                        
+                            
+                            <td class="border px-4 py-2 bg-green-200">
+                                <a href="/2024/09/19/dealing_with_mental_health.html">2</a>
+                            </td>
+                        
+                    
+                        
+                            
+                            <td class="border px-4 py-2 bg-green-200">
+                                <a href="/2024/08/27/ux-designs.MARKUP">2</a>
+                            </td>
+                        
+                    
+
+                    <!-- If no post found, show an empty cell -->
+                    
+                
+                    
+
+                    
+                    
+                    
+                    <!-- Check if there's a post on this day -->
+                    
+                        
+                            
+                            <td class="border px-4 py-2 bg-green-200">
+                                <a href="/2024/09/19/dealing_with_mental_health.html">2</a>
+                            </td>
+                        
+                    
+                        
+                            
+                            <td class="border px-4 py-2 bg-green-200">
+                                <a href="/2024/08/27/ux-designs.MARKUP">2</a>
+                            </td>
+                        
+                    
+
+                    <!-- If no post found, show an empty cell -->
+                    
+                
+                    
+
+                    
+                    
+                    
+                    <!-- Check if there's a post on this day -->
+                    
+                        
+                            
+                            <td class="border px-4 py-2 bg-green-200">
+                                <a href="/2024/09/19/dealing_with_mental_health.html">2</a>
+                            </td>
+                        
+                    
+                        
+                            
+                            <td class="border px-4 py-2 bg-green-200">
+                                <a href="/2024/08/27/ux-designs.MARKUP">2</a>
+                            </td>
+                        
+                    
+
+                    <!-- If no post found, show an empty cell -->
+                    
+                
+            </tr>
+            
+            
+            <tr>
+                <!-- Loop over the days of the week (Sun to Sat) -->
+                
+                    
+
+                    
+                    
+                    
+                    <!-- Check if there's a post on this day -->
+                    
+                        
+                            
+                            <td class="border px-4 py-2 bg-green-200">
+                                <a href="/2024/09/19/dealing_with_mental_health.html">3</a>
+                            </td>
+                        
+                    
+                        
+                            
+                            <td class="border px-4 py-2 bg-green-200">
+                                <a href="/2024/08/27/ux-designs.MARKUP">3</a>
+                            </td>
+                        
+                    
+
+                    <!-- If no post found, show an empty cell -->
+                    
+                
+                    
+
+                    
+                    
+                    
+                    <!-- Check if there's a post on this day -->
+                    
+                        
+                            
+                            <td class="border px-4 py-2 bg-green-200">
+                                <a href="/2024/09/19/dealing_with_mental_health.html">3</a>
+                            </td>
+                        
+                    
+                        
+                            
+                            <td class="border px-4 py-2 bg-green-200">
+                                <a href="/2024/08/27/ux-designs.MARKUP">3</a>
+                            </td>
+                        
+                    
+
+                    <!-- If no post found, show an empty cell -->
+                    
+                
+                    
+
+                    
+                    
+                    
+                    <!-- Check if there's a post on this day -->
+                    
+                        
+                            
+                            <td class="border px-4 py-2 bg-green-200">
+                                <a href="/2024/09/19/dealing_with_mental_health.html">3</a>
+                            </td>
+                        
+                    
+                        
+                            
+                            <td class="border px-4 py-2 bg-green-200">
+                                <a href="/2024/08/27/ux-designs.MARKUP">3</a>
+                            </td>
+                        
+                    
+
+                    <!-- If no post found, show an empty cell -->
+                    
+                
+                    
+
+                    
+                    
+                    
+                    <!-- Check if there's a post on this day -->
+                    
+                        
+                            
+                            <td class="border px-4 py-2 bg-green-200">
+                                <a href="/2024/09/19/dealing_with_mental_health.html">3</a>
+                            </td>
+                        
+                    
+                        
+                            
+                            <td class="border px-4 py-2 bg-green-200">
+                                <a href="/2024/08/27/ux-designs.MARKUP">3</a>
+                            </td>
+                        
+                    
+
+                    <!-- If no post found, show an empty cell -->
+                    
+                
+                    
+
+                    
+                    
+                    
+                    <!-- Check if there's a post on this day -->
+                    
+                        
+                            
+                            <td class="border px-4 py-2 bg-green-200">
+                                <a href="/2024/09/19/dealing_with_mental_health.html">3</a>
+                            </td>
+                        
+                    
+                        
+                            
+                            <td class="border px-4 py-2 bg-green-200">
+                                <a href="/2024/08/27/ux-designs.MARKUP">3</a>
+                            </td>
+                        
+                    
+
+                    <!-- If no post found, show an empty cell -->
+                    
+                
+                    
+
+                    
+                    
+                    
+                    <!-- Check if there's a post on this day -->
+                    
+                        
+                            
+                            <td class="border px-4 py-2 bg-green-200">
+                                <a href="/2024/09/19/dealing_with_mental_health.html">3</a>
+                            </td>
+                        
+                    
+                        
+                            
+                            <td class="border px-4 py-2 bg-green-200">
+                                <a href="/2024/08/27/ux-designs.MARKUP">3</a>
+                            </td>
+                        
+                    
+
+                    <!-- If no post found, show an empty cell -->
+                    
+                
+                    
+
+                    
+                    
+                    
+                    <!-- Check if there's a post on this day -->
+                    
+                        
+                            
+                            <td class="border px-4 py-2 bg-green-200">
+                                <a href="/2024/09/19/dealing_with_mental_health.html">3</a>
+                            </td>
+                        
+                    
+                        
+                            
+                            <td class="border px-4 py-2 bg-green-200">
+                                <a href="/2024/08/27/ux-designs.MARKUP">3</a>
+                            </td>
+                        
+                    
+
+                    <!-- If no post found, show an empty cell -->
+                    
+                
+            </tr>
+            
+            
+            <tr>
+                <!-- Loop over the days of the week (Sun to Sat) -->
+                
+                    
+
+                    
+                    
+                    
+                    <!-- Check if there's a post on this day -->
+                    
+                        
+                            
+                            <td class="border px-4 py-2 bg-green-200">
+                                <a href="/2024/09/19/dealing_with_mental_health.html">4</a>
+                            </td>
+                        
+                    
+                        
+                            
+                            <td class="border px-4 py-2 bg-green-200">
+                                <a href="/2024/08/27/ux-designs.MARKUP">4</a>
+                            </td>
+                        
+                    
+
+                    <!-- If no post found, show an empty cell -->
+                    
+                
+                    
+
+                    
+                    
+                    
+                    <!-- Check if there's a post on this day -->
+                    
+                        
+                            
+                            <td class="border px-4 py-2 bg-green-200">
+                                <a href="/2024/09/19/dealing_with_mental_health.html">4</a>
+                            </td>
+                        
+                    
+                        
+                            
+                            <td class="border px-4 py-2 bg-green-200">
+                                <a href="/2024/08/27/ux-designs.MARKUP">4</a>
+                            </td>
+                        
+                    
+
+                    <!-- If no post found, show an empty cell -->
+                    
+                
+                    
+
+                    
+                    
+                    
+                    <!-- Check if there's a post on this day -->
+                    
+                        
+                            
+                            <td class="border px-4 py-2 bg-green-200">
+                                <a href="/2024/09/19/dealing_with_mental_health.html">4</a>
+                            </td>
+                        
+                    
+                        
+                            
+                            <td class="border px-4 py-2 bg-green-200">
+                                <a href="/2024/08/27/ux-designs.MARKUP">4</a>
+                            </td>
+                        
+                    
+
+                    <!-- If no post found, show an empty cell -->
+                    
+                
+                    
+
+                    
+                    
+                    
+                    <!-- Check if there's a post on this day -->
+                    
+                        
+                            
+                            <td class="border px-4 py-2 bg-green-200">
+                                <a href="/2024/09/19/dealing_with_mental_health.html">4</a>
+                            </td>
+                        
+                    
+                        
+                            
+                            <td class="border px-4 py-2 bg-green-200">
+                                <a href="/2024/08/27/ux-designs.MARKUP">4</a>
+                            </td>
+                        
+                    
+
+                    <!-- If no post found, show an empty cell -->
+                    
+                
+                    
+
+                    
+                    
+                    
+                    <!-- Check if there's a post on this day -->
+                    
+                        
+                            
+                            <td class="border px-4 py-2 bg-green-200">
+                                <a href="/2024/09/19/dealing_with_mental_health.html">4</a>
+                            </td>
+                        
+                    
+                        
+                            
+                            <td class="border px-4 py-2 bg-green-200">
+                                <a href="/2024/08/27/ux-designs.MARKUP">4</a>
+                            </td>
+                        
+                    
+
+                    <!-- If no post found, show an empty cell -->
+                    
+                
+                    
+
+                    
+                    
+                    
+                    <!-- Check if there's a post on this day -->
+                    
+                        
+                            
+                            <td class="border px-4 py-2 bg-green-200">
+                                <a href="/2024/09/19/dealing_with_mental_health.html">4</a>
+                            </td>
+                        
+                    
+                        
+                            
+                            <td class="border px-4 py-2 bg-green-200">
+                                <a href="/2024/08/27/ux-designs.MARKUP">4</a>
+                            </td>
+                        
+                    
+
+                    <!-- If no post found, show an empty cell -->
+                    
+                
+                    
+
+                    
+                    
+                    
+                    <!-- Check if there's a post on this day -->
+                    
+                        
+                            
+                            <td class="border px-4 py-2 bg-green-200">
+                                <a href="/2024/09/19/dealing_with_mental_health.html">4</a>
+                            </td>
+                        
+                    
+                        
+                            
+                            <td class="border px-4 py-2 bg-green-200">
+                                <a href="/2024/08/27/ux-designs.MARKUP">4</a>
+                            </td>
+                        
+                    
+
+                    <!-- If no post found, show an empty cell -->
+                    
+                
+            </tr>
+            
+            
+            <tr>
+                <!-- Loop over the days of the week (Sun to Sat) -->
+                
+                    
+
+                    
+                    
+                    
+                    <!-- Check if there's a post on this day -->
+                    
+                        
+                            
+                            <td class="border px-4 py-2 bg-green-200">
+                                <a href="/2024/09/19/dealing_with_mental_health.html">5</a>
+                            </td>
+                        
+                    
+                        
+                            
+                            <td class="border px-4 py-2 bg-green-200">
+                                <a href="/2024/08/27/ux-designs.MARKUP">5</a>
+                            </td>
+                        
+                    
+
+                    <!-- If no post found, show an empty cell -->
+                    
+                
+                    
+
+                    
+                    
+                    
+                    <!-- Check if there's a post on this day -->
+                    
+                        
+                            
+                            <td class="border px-4 py-2 bg-green-200">
+                                <a href="/2024/09/19/dealing_with_mental_health.html">5</a>
+                            </td>
+                        
+                    
+                        
+                            
+                            <td class="border px-4 py-2 bg-green-200">
+                                <a href="/2024/08/27/ux-designs.MARKUP">5</a>
+                            </td>
+                        
+                    
+
+                    <!-- If no post found, show an empty cell -->
+                    
+                
+                    
+
+                    
+                    
+                    
+                    <!-- Check if there's a post on this day -->
+                    
+                        
+                            
+                            <td class="border px-4 py-2 bg-green-200">
+                                <a href="/2024/09/19/dealing_with_mental_health.html">5</a>
+                            </td>
+                        
+                    
+                        
+                            
+                            <td class="border px-4 py-2 bg-green-200">
+                                <a href="/2024/08/27/ux-designs.MARKUP">5</a>
+                            </td>
+                        
+                    
+
+                    <!-- If no post found, show an empty cell -->
+                    
+                
+                    
+
+                    
+                    
+                    
+                    <!-- Check if there's a post on this day -->
+                    
+                        
+                            
+                            <td class="border px-4 py-2 bg-green-200">
+                                <a href="/2024/09/19/dealing_with_mental_health.html">5</a>
+                            </td>
+                        
+                    
+                        
+                            
+                            <td class="border px-4 py-2 bg-green-200">
+                                <a href="/2024/08/27/ux-designs.MARKUP">5</a>
+                            </td>
+                        
+                    
+
+                    <!-- If no post found, show an empty cell -->
+                    
+                
+                    
+
+                    
+                    
+                    
+                    <!-- Check if there's a post on this day -->
+                    
+                        
+                            
+                            <td class="border px-4 py-2 bg-green-200">
+                                <a href="/2024/09/19/dealing_with_mental_health.html">5</a>
+                            </td>
+                        
+                    
+                        
+                            
+                            <td class="border px-4 py-2 bg-green-200">
+                                <a href="/2024/08/27/ux-designs.MARKUP">5</a>
+                            </td>
+                        
+                    
+
+                    <!-- If no post found, show an empty cell -->
+                    
+                
+                    
+
+                    
+                    
+                    
+                    <!-- Check if there's a post on this day -->
+                    
+                        
+                            
+                            <td class="border px-4 py-2 bg-green-200">
+                                <a href="/2024/09/19/dealing_with_mental_health.html">5</a>
+                            </td>
+                        
+                    
+                        
+                            
+                            <td class="border px-4 py-2 bg-green-200">
+                                <a href="/2024/08/27/ux-designs.MARKUP">5</a>
+                            </td>
+                        
+                    
+
+                    <!-- If no post found, show an empty cell -->
+                    
+                
+                    
+
+                    
+                    
+                    
+                    <!-- Check if there's a post on this day -->
+                    
+                        
+                            
+                            <td class="border px-4 py-2 bg-green-200">
+                                <a href="/2024/09/19/dealing_with_mental_health.html">5</a>
+                            </td>
+                        
+                    
+                        
+                            
+                            <td class="border px-4 py-2 bg-green-200">
+                                <a href="/2024/08/27/ux-designs.MARKUP">5</a>
+                            </td>
+                        
+                    
+
+                    <!-- If no post found, show an empty cell -->
+                    
+                
+            </tr>
+            
+            
+            <tr>
+                <!-- Loop over the days of the week (Sun to Sat) -->
+                
+                    
+
+                    
+                    
+                    
+                    <!-- Check if there's a post on this day -->
+                    
+                        
+                            
+                            <td class="border px-4 py-2 bg-green-200">
+                                <a href="/2024/09/19/dealing_with_mental_health.html">6</a>
+                            </td>
+                        
+                    
+                        
+                            
+                            <td class="border px-4 py-2 bg-green-200">
+                                <a href="/2024/08/27/ux-designs.MARKUP">6</a>
+                            </td>
+                        
+                    
+
+                    <!-- If no post found, show an empty cell -->
+                    
+                
+                    
+
+                    
+                    
+                    
+                    <!-- Check if there's a post on this day -->
+                    
+                        
+                            
+                            <td class="border px-4 py-2 bg-green-200">
+                                <a href="/2024/09/19/dealing_with_mental_health.html">6</a>
+                            </td>
+                        
+                    
+                        
+                            
+                            <td class="border px-4 py-2 bg-green-200">
+                                <a href="/2024/08/27/ux-designs.MARKUP">6</a>
+                            </td>
+                        
+                    
+
+                    <!-- If no post found, show an empty cell -->
+                    
+                
+                    
+
+                    
+                    
+                    
+                    <!-- Check if there's a post on this day -->
+                    
+                        
+                            
+                            <td class="border px-4 py-2 bg-green-200">
+                                <a href="/2024/09/19/dealing_with_mental_health.html">6</a>
+                            </td>
+                        
+                    
+                        
+                            
+                            <td class="border px-4 py-2 bg-green-200">
+                                <a href="/2024/08/27/ux-designs.MARKUP">6</a>
+                            </td>
+                        
+                    
+
+                    <!-- If no post found, show an empty cell -->
+                    
+                
+                    
+
+                    
+                    
+                    
+                    <!-- Check if there's a post on this day -->
+                    
+                        
+                            
+                            <td class="border px-4 py-2 bg-green-200">
+                                <a href="/2024/09/19/dealing_with_mental_health.html">6</a>
+                            </td>
+                        
+                    
+                        
+                            
+                            <td class="border px-4 py-2 bg-green-200">
+                                <a href="/2024/08/27/ux-designs.MARKUP">6</a>
+                            </td>
+                        
+                    
+
+                    <!-- If no post found, show an empty cell -->
+                    
+                
+                    
+
+                    
+                    
+                    
+                    <!-- Check if there's a post on this day -->
+                    
+                        
+                            
+                            <td class="border px-4 py-2 bg-green-200">
+                                <a href="/2024/09/19/dealing_with_mental_health.html">6</a>
+                            </td>
+                        
+                    
+                        
+                            
+                            <td class="border px-4 py-2 bg-green-200">
+                                <a href="/2024/08/27/ux-designs.MARKUP">6</a>
+                            </td>
+                        
+                    
+
+                    <!-- If no post found, show an empty cell -->
+                    
+                
+                    
+
+                    
+                    
+                    
+                    <!-- Check if there's a post on this day -->
+                    
+                        
+                            
+                            <td class="border px-4 py-2 bg-green-200">
+                                <a href="/2024/09/19/dealing_with_mental_health.html">6</a>
+                            </td>
+                        
+                    
+                        
+                            
+                            <td class="border px-4 py-2 bg-green-200">
+                                <a href="/2024/08/27/ux-designs.MARKUP">6</a>
+                            </td>
+                        
+                    
+
+                    <!-- If no post found, show an empty cell -->
+                    
+                
+                    
+
+                    
+                    
+                    
+                    <!-- Check if there's a post on this day -->
+                    
+                        
+                            
+                            <td class="border px-4 py-2 bg-green-200">
+                                <a href="/2024/09/19/dealing_with_mental_health.html">6</a>
+                            </td>
+                        
+                    
+                        
+                            
+                            <td class="border px-4 py-2 bg-green-200">
+                                <a href="/2024/08/27/ux-designs.MARKUP">6</a>
+                            </td>
+                        
+                    
+
+                    <!-- If no post found, show an empty cell -->
+                    
+                
+            </tr>
+            
+            
+            <tr>
+                <!-- Loop over the days of the week (Sun to Sat) -->
+                
+                    
+
+                    
+                    
+                    
+                    <!-- Check if there's a post on this day -->
+                    
+                        
+                            
+                            <td class="border px-4 py-2 bg-green-200">
+                                <a href="/2024/09/19/dealing_with_mental_health.html">7</a>
+                            </td>
+                        
+                    
+                        
+                            
+                            <td class="border px-4 py-2 bg-green-200">
+                                <a href="/2024/08/27/ux-designs.MARKUP">7</a>
+                            </td>
+                        
+                    
+
+                    <!-- If no post found, show an empty cell -->
+                    
+                
+                    
+
+                    
+                    
+                    
+                    <!-- Check if there's a post on this day -->
+                    
+                        
+                            
+                            <td class="border px-4 py-2 bg-green-200">
+                                <a href="/2024/09/19/dealing_with_mental_health.html">7</a>
+                            </td>
+                        
+                    
+                        
+                            
+                            <td class="border px-4 py-2 bg-green-200">
+                                <a href="/2024/08/27/ux-designs.MARKUP">7</a>
+                            </td>
+                        
+                    
+
+                    <!-- If no post found, show an empty cell -->
+                    
+                
+                    
+
+                    
+                    
+                    
+                    <!-- Check if there's a post on this day -->
+                    
+                        
+                            
+                            <td class="border px-4 py-2 bg-green-200">
+                                <a href="/2024/09/19/dealing_with_mental_health.html">7</a>
+                            </td>
+                        
+                    
+                        
+                            
+                            <td class="border px-4 py-2 bg-green-200">
+                                <a href="/2024/08/27/ux-designs.MARKUP">7</a>
+                            </td>
+                        
+                    
+
+                    <!-- If no post found, show an empty cell -->
+                    
+                
+                    
+
+                    
+                    
+                    
+                    <!-- Check if there's a post on this day -->
+                    
+                        
+                            
+                            <td class="border px-4 py-2 bg-green-200">
+                                <a href="/2024/09/19/dealing_with_mental_health.html">7</a>
+                            </td>
+                        
+                    
+                        
+                            
+                            <td class="border px-4 py-2 bg-green-200">
+                                <a href="/2024/08/27/ux-designs.MARKUP">7</a>
+                            </td>
+                        
+                    
+
+                    <!-- If no post found, show an empty cell -->
+                    
+                
+                    
+
+                    
+                    
+                    
+                    <!-- Check if there's a post on this day -->
+                    
+                        
+                            
+                            <td class="border px-4 py-2 bg-green-200">
+                                <a href="/2024/09/19/dealing_with_mental_health.html">7</a>
+                            </td>
+                        
+                    
+                        
+                            
+                            <td class="border px-4 py-2 bg-green-200">
+                                <a href="/2024/08/27/ux-designs.MARKUP">7</a>
+                            </td>
+                        
+                    
+
+                    <!-- If no post found, show an empty cell -->
+                    
+                
+                    
+
+                    
+                    
+                    
+                    <!-- Check if there's a post on this day -->
+                    
+                        
+                            
+                            <td class="border px-4 py-2 bg-green-200">
+                                <a href="/2024/09/19/dealing_with_mental_health.html">7</a>
+                            </td>
+                        
+                    
+                        
+                            
+                            <td class="border px-4 py-2 bg-green-200">
+                                <a href="/2024/08/27/ux-designs.MARKUP">7</a>
+                            </td>
+                        
+                    
+
+                    <!-- If no post found, show an empty cell -->
+                    
+                
+                    
+
+                    
+                    
+                    
+                    <!-- Check if there's a post on this day -->
+                    
+                        
+                            
+                            <td class="border px-4 py-2 bg-green-200">
+                                <a href="/2024/09/19/dealing_with_mental_health.html">7</a>
+                            </td>
+                        
+                    
+                        
+                            
+                            <td class="border px-4 py-2 bg-green-200">
+                                <a href="/2024/08/27/ux-designs.MARKUP">7</a>
+                            </td>
+                        
+                    
+
+                    <!-- If no post found, show an empty cell -->
+                    
+                
+            </tr>
+            
+            
+            <tr>
+                <!-- Loop over the days of the week (Sun to Sat) -->
+                
+                    
+
+                    
+                    
+                    
+                    <!-- Check if there's a post on this day -->
+                    
+                        
+                            
+                            <td class="border px-4 py-2 bg-green-200">
+                                <a href="/2024/09/19/dealing_with_mental_health.html">8</a>
+                            </td>
+                        
+                    
+                        
+                            
+                            <td class="border px-4 py-2 bg-green-200">
+                                <a href="/2024/08/27/ux-designs.MARKUP">8</a>
+                            </td>
+                        
+                    
+
+                    <!-- If no post found, show an empty cell -->
+                    
+                
+                    
+
+                    
+                    
+                    
+                    <!-- Check if there's a post on this day -->
+                    
+                        
+                            
+                            <td class="border px-4 py-2 bg-green-200">
+                                <a href="/2024/09/19/dealing_with_mental_health.html">8</a>
+                            </td>
+                        
+                    
+                        
+                            
+                            <td class="border px-4 py-2 bg-green-200">
+                                <a href="/2024/08/27/ux-designs.MARKUP">8</a>
+                            </td>
+                        
+                    
+
+                    <!-- If no post found, show an empty cell -->
+                    
+                
+                    
+
+                    
+                    
+                    
+                    <!-- Check if there's a post on this day -->
+                    
+                        
+                            
+                            <td class="border px-4 py-2 bg-green-200">
+                                <a href="/2024/09/19/dealing_with_mental_health.html">8</a>
+                            </td>
+                        
+                    
+                        
+                            
+                            <td class="border px-4 py-2 bg-green-200">
+                                <a href="/2024/08/27/ux-designs.MARKUP">8</a>
+                            </td>
+                        
+                    
+
+                    <!-- If no post found, show an empty cell -->
+                    
+                
+                    
+
+                    
+                    
+                    
+                    <!-- Check if there's a post on this day -->
+                    
+                        
+                            
+                            <td class="border px-4 py-2 bg-green-200">
+                                <a href="/2024/09/19/dealing_with_mental_health.html">8</a>
+                            </td>
+                        
+                    
+                        
+                            
+                            <td class="border px-4 py-2 bg-green-200">
+                                <a href="/2024/08/27/ux-designs.MARKUP">8</a>
+                            </td>
+                        
+                    
+
+                    <!-- If no post found, show an empty cell -->
+                    
+                
+                    
+
+                    
+                    
+                    
+                    <!-- Check if there's a post on this day -->
+                    
+                        
+                            
+                            <td class="border px-4 py-2 bg-green-200">
+                                <a href="/2024/09/19/dealing_with_mental_health.html">8</a>
+                            </td>
+                        
+                    
+                        
+                            
+                            <td class="border px-4 py-2 bg-green-200">
+                                <a href="/2024/08/27/ux-designs.MARKUP">8</a>
+                            </td>
+                        
+                    
+
+                    <!-- If no post found, show an empty cell -->
+                    
+                
+                    
+
+                    
+                    
+                    
+                    <!-- Check if there's a post on this day -->
+                    
+                        
+                            
+                            <td class="border px-4 py-2 bg-green-200">
+                                <a href="/2024/09/19/dealing_with_mental_health.html">8</a>
+                            </td>
+                        
+                    
+                        
+                            
+                            <td class="border px-4 py-2 bg-green-200">
+                                <a href="/2024/08/27/ux-designs.MARKUP">8</a>
+                            </td>
+                        
+                    
+
+                    <!-- If no post found, show an empty cell -->
+                    
+                
+                    
+
+                    
+                    
+                    
+                    <!-- Check if there's a post on this day -->
+                    
+                        
+                            
+                            <td class="border px-4 py-2 bg-green-200">
+                                <a href="/2024/09/19/dealing_with_mental_health.html">8</a>
+                            </td>
+                        
+                    
+                        
+                            
+                            <td class="border px-4 py-2 bg-green-200">
+                                <a href="/2024/08/27/ux-designs.MARKUP">8</a>
+                            </td>
+                        
+                    
+
+                    <!-- If no post found, show an empty cell -->
+                    
+                
+            </tr>
+            
+            
+            <tr>
+                <!-- Loop over the days of the week (Sun to Sat) -->
+                
+                    
+
+                    
+                    
+                    
+                    <!-- Check if there's a post on this day -->
+                    
+                        
+                            
+                            <td class="border px-4 py-2 bg-green-200">
+                                <a href="/2024/09/19/dealing_with_mental_health.html">9</a>
+                            </td>
+                        
+                    
+                        
+                            
+                            <td class="border px-4 py-2 bg-green-200">
+                                <a href="/2024/08/27/ux-designs.MARKUP">9</a>
+                            </td>
+                        
+                    
+
+                    <!-- If no post found, show an empty cell -->
+                    
+                
+                    
+
+                    
+                    
+                    
+                    <!-- Check if there's a post on this day -->
+                    
+                        
+                            
+                            <td class="border px-4 py-2 bg-green-200">
+                                <a href="/2024/09/19/dealing_with_mental_health.html">9</a>
+                            </td>
+                        
+                    
+                        
+                            
+                            <td class="border px-4 py-2 bg-green-200">
+                                <a href="/2024/08/27/ux-designs.MARKUP">9</a>
+                            </td>
+                        
+                    
+
+                    <!-- If no post found, show an empty cell -->
+                    
+                
+                    
+
+                    
+                    
+                    
+                    <!-- Check if there's a post on this day -->
+                    
+                        
+                            
+                            <td class="border px-4 py-2 bg-green-200">
+                                <a href="/2024/09/19/dealing_with_mental_health.html">9</a>
+                            </td>
+                        
+                    
+                        
+                            
+                            <td class="border px-4 py-2 bg-green-200">
+                                <a href="/2024/08/27/ux-designs.MARKUP">9</a>
+                            </td>
+                        
+                    
+
+                    <!-- If no post found, show an empty cell -->
+                    
+                
+                    
+
+                    
+                    
+                    
+                    <!-- Check if there's a post on this day -->
+                    
+                        
+                            
+                            <td class="border px-4 py-2 bg-green-200">
+                                <a href="/2024/09/19/dealing_with_mental_health.html">9</a>
+                            </td>
+                        
+                    
+                        
+                            
+                            <td class="border px-4 py-2 bg-green-200">
+                                <a href="/2024/08/27/ux-designs.MARKUP">9</a>
+                            </td>
+                        
+                    
+
+                    <!-- If no post found, show an empty cell -->
+                    
+                
+                    
+
+                    
+                    
+                    
+                    <!-- Check if there's a post on this day -->
+                    
+                        
+                            
+                            <td class="border px-4 py-2 bg-green-200">
+                                <a href="/2024/09/19/dealing_with_mental_health.html">9</a>
+                            </td>
+                        
+                    
+                        
+                            
+                            <td class="border px-4 py-2 bg-green-200">
+                                <a href="/2024/08/27/ux-designs.MARKUP">9</a>
+                            </td>
+                        
+                    
+
+                    <!-- If no post found, show an empty cell -->
+                    
+                
+                    
+
+                    
+                    
+                    
+                    <!-- Check if there's a post on this day -->
+                    
+                        
+                            
+                            <td class="border px-4 py-2 bg-green-200">
+                                <a href="/2024/09/19/dealing_with_mental_health.html">9</a>
+                            </td>
+                        
+                    
+                        
+                            
+                            <td class="border px-4 py-2 bg-green-200">
+                                <a href="/2024/08/27/ux-designs.MARKUP">9</a>
+                            </td>
+                        
+                    
+
+                    <!-- If no post found, show an empty cell -->
+                    
+                
+                    
+
+                    
+                    
+                    
+                    <!-- Check if there's a post on this day -->
+                    
+                        
+                            
+                            <td class="border px-4 py-2 bg-green-200">
+                                <a href="/2024/09/19/dealing_with_mental_health.html">9</a>
+                            </td>
+                        
+                    
+                        
+                            
+                            <td class="border px-4 py-2 bg-green-200">
+                                <a href="/2024/08/27/ux-designs.MARKUP">9</a>
+                            </td>
+                        
+                    
+
+                    <!-- If no post found, show an empty cell -->
+                    
+                
+            </tr>
+            
+            
+            <tr>
+                <!-- Loop over the days of the week (Sun to Sat) -->
+                
+                    
+
+                    
+                    
+                    
+                    <!-- Check if there's a post on this day -->
+                    
+                        
+                            
+                            <td class="border px-4 py-2 bg-green-200">
+                                <a href="/2024/09/19/dealing_with_mental_health.html">10</a>
+                            </td>
+                        
+                    
+                        
+                            
+                            <td class="border px-4 py-2 bg-green-200">
+                                <a href="/2024/08/27/ux-designs.MARKUP">10</a>
+                            </td>
+                        
+                    
+
+                    <!-- If no post found, show an empty cell -->
+                    
+                
+                    
+
+                    
+                    
+                    
+                    <!-- Check if there's a post on this day -->
+                    
+                        
+                            
+                            <td class="border px-4 py-2 bg-green-200">
+                                <a href="/2024/09/19/dealing_with_mental_health.html">10</a>
+                            </td>
+                        
+                    
+                        
+                            
+                            <td class="border px-4 py-2 bg-green-200">
+                                <a href="/2024/08/27/ux-designs.MARKUP">10</a>
+                            </td>
+                        
+                    
+
+                    <!-- If no post found, show an empty cell -->
+                    
+                
+                    
+
+                    
+                    
+                    
+                    <!-- Check if there's a post on this day -->
+                    
+                        
+                            
+                            <td class="border px-4 py-2 bg-green-200">
+                                <a href="/2024/09/19/dealing_with_mental_health.html">10</a>
+                            </td>
+                        
+                    
+                        
+                            
+                            <td class="border px-4 py-2 bg-green-200">
+                                <a href="/2024/08/27/ux-designs.MARKUP">10</a>
+                            </td>
+                        
+                    
+
+                    <!-- If no post found, show an empty cell -->
+                    
+                
+                    
+
+                    
+                    
+                    
+                    <!-- Check if there's a post on this day -->
+                    
+                        
+                            
+                            <td class="border px-4 py-2 bg-green-200">
+                                <a href="/2024/09/19/dealing_with_mental_health.html">10</a>
+                            </td>
+                        
+                    
+                        
+                            
+                            <td class="border px-4 py-2 bg-green-200">
+                                <a href="/2024/08/27/ux-designs.MARKUP">10</a>
+                            </td>
+                        
+                    
+
+                    <!-- If no post found, show an empty cell -->
+                    
+                
+                    
+
+                    
+                    
+                    
+                    <!-- Check if there's a post on this day -->
+                    
+                        
+                            
+                            <td class="border px-4 py-2 bg-green-200">
+                                <a href="/2024/09/19/dealing_with_mental_health.html">10</a>
+                            </td>
+                        
+                    
+                        
+                            
+                            <td class="border px-4 py-2 bg-green-200">
+                                <a href="/2024/08/27/ux-designs.MARKUP">10</a>
+                            </td>
+                        
+                    
+
+                    <!-- If no post found, show an empty cell -->
+                    
+                
+                    
+
+                    
+                    
+                    
+                    <!-- Check if there's a post on this day -->
+                    
+                        
+                            
+                            <td class="border px-4 py-2 bg-green-200">
+                                <a href="/2024/09/19/dealing_with_mental_health.html">10</a>
+                            </td>
+                        
+                    
+                        
+                            
+                            <td class="border px-4 py-2 bg-green-200">
+                                <a href="/2024/08/27/ux-designs.MARKUP">10</a>
+                            </td>
+                        
+                    
+
+                    <!-- If no post found, show an empty cell -->
+                    
+                
+                    
+
+                    
+                    
+                    
+                    <!-- Check if there's a post on this day -->
+                    
+                        
+                            
+                            <td class="border px-4 py-2 bg-green-200">
+                                <a href="/2024/09/19/dealing_with_mental_health.html">10</a>
+                            </td>
+                        
+                    
+                        
+                            
+                            <td class="border px-4 py-2 bg-green-200">
+                                <a href="/2024/08/27/ux-designs.MARKUP">10</a>
+                            </td>
+                        
+                    
+
+                    <!-- If no post found, show an empty cell -->
+                    
+                
+            </tr>
+            
+            
+            <tr>
+                <!-- Loop over the days of the week (Sun to Sat) -->
+                
+                    
+
+                    
+                    
+                    
+                    <!-- Check if there's a post on this day -->
+                    
+                        
+                            
+                            <td class="border px-4 py-2 bg-green-200">
+                                <a href="/2024/09/19/dealing_with_mental_health.html">11</a>
+                            </td>
+                        
+                    
+                        
+                            
+                            <td class="border px-4 py-2 bg-green-200">
+                                <a href="/2024/08/27/ux-designs.MARKUP">11</a>
+                            </td>
+                        
+                    
+
+                    <!-- If no post found, show an empty cell -->
+                    
+                
+                    
+
+                    
+                    
+                    
+                    <!-- Check if there's a post on this day -->
+                    
+                        
+                            
+                            <td class="border px-4 py-2 bg-green-200">
+                                <a href="/2024/09/19/dealing_with_mental_health.html">11</a>
+                            </td>
+                        
+                    
+                        
+                            
+                            <td class="border px-4 py-2 bg-green-200">
+                                <a href="/2024/08/27/ux-designs.MARKUP">11</a>
+                            </td>
+                        
+                    
+
+                    <!-- If no post found, show an empty cell -->
+                    
+                
+                    
+
+                    
+                    
+                    
+                    <!-- Check if there's a post on this day -->
+                    
+                        
+                            
+                            <td class="border px-4 py-2 bg-green-200">
+                                <a href="/2024/09/19/dealing_with_mental_health.html">11</a>
+                            </td>
+                        
+                    
+                        
+                            
+                            <td class="border px-4 py-2 bg-green-200">
+                                <a href="/2024/08/27/ux-designs.MARKUP">11</a>
+                            </td>
+                        
+                    
+
+                    <!-- If no post found, show an empty cell -->
+                    
+                
+                    
+
+                    
+                    
+                    
+                    <!-- Check if there's a post on this day -->
+                    
+                        
+                            
+                            <td class="border px-4 py-2 bg-green-200">
+                                <a href="/2024/09/19/dealing_with_mental_health.html">11</a>
+                            </td>
+                        
+                    
+                        
+                            
+                            <td class="border px-4 py-2 bg-green-200">
+                                <a href="/2024/08/27/ux-designs.MARKUP">11</a>
+                            </td>
+                        
+                    
+
+                    <!-- If no post found, show an empty cell -->
+                    
+                
+                    
+
+                    
+                    
+                    
+                    <!-- Check if there's a post on this day -->
+                    
+                        
+                            
+                            <td class="border px-4 py-2 bg-green-200">
+                                <a href="/2024/09/19/dealing_with_mental_health.html">11</a>
+                            </td>
+                        
+                    
+                        
+                            
+                            <td class="border px-4 py-2 bg-green-200">
+                                <a href="/2024/08/27/ux-designs.MARKUP">11</a>
+                            </td>
+                        
+                    
+
+                    <!-- If no post found, show an empty cell -->
+                    
+                
+                    
+
+                    
+                    
+                    
+                    <!-- Check if there's a post on this day -->
+                    
+                        
+                            
+                            <td class="border px-4 py-2 bg-green-200">
+                                <a href="/2024/09/19/dealing_with_mental_health.html">11</a>
+                            </td>
+                        
+                    
+                        
+                            
+                            <td class="border px-4 py-2 bg-green-200">
+                                <a href="/2024/08/27/ux-designs.MARKUP">11</a>
+                            </td>
+                        
+                    
+
+                    <!-- If no post found, show an empty cell -->
+                    
+                
+                    
+
+                    
+                    
+                    
+                    <!-- Check if there's a post on this day -->
+                    
+                        
+                            
+                            <td class="border px-4 py-2 bg-green-200">
+                                <a href="/2024/09/19/dealing_with_mental_health.html">11</a>
+                            </td>
+                        
+                    
+                        
+                            
+                            <td class="border px-4 py-2 bg-green-200">
+                                <a href="/2024/08/27/ux-designs.MARKUP">11</a>
+                            </td>
+                        
+                    
+
+                    <!-- If no post found, show an empty cell -->
+                    
+                
+            </tr>
+            
+            
+            <tr>
+                <!-- Loop over the days of the week (Sun to Sat) -->
+                
+                    
+
+                    
+                    
+                    
+                    <!-- Check if there's a post on this day -->
+                    
+                        
+                            
+                            <td class="border px-4 py-2 bg-green-200">
+                                <a href="/2024/09/19/dealing_with_mental_health.html">12</a>
+                            </td>
+                        
+                    
+                        
+                            
+                            <td class="border px-4 py-2 bg-green-200">
+                                <a href="/2024/08/27/ux-designs.MARKUP">12</a>
+                            </td>
+                        
+                    
+
+                    <!-- If no post found, show an empty cell -->
+                    
+                
+                    
+
+                    
+                    
+                    
+                    <!-- Check if there's a post on this day -->
+                    
+                        
+                            
+                            <td class="border px-4 py-2 bg-green-200">
+                                <a href="/2024/09/19/dealing_with_mental_health.html">12</a>
+                            </td>
+                        
+                    
+                        
+                            
+                            <td class="border px-4 py-2 bg-green-200">
+                                <a href="/2024/08/27/ux-designs.MARKUP">12</a>
+                            </td>
+                        
+                    
+
+                    <!-- If no post found, show an empty cell -->
+                    
+                
+                    
+
+                    
+                    
+                    
+                    <!-- Check if there's a post on this day -->
+                    
+                        
+                            
+                            <td class="border px-4 py-2 bg-green-200">
+                                <a href="/2024/09/19/dealing_with_mental_health.html">12</a>
+                            </td>
+                        
+                    
+                        
+                            
+                            <td class="border px-4 py-2 bg-green-200">
+                                <a href="/2024/08/27/ux-designs.MARKUP">12</a>
+                            </td>
+                        
+                    
+
+                    <!-- If no post found, show an empty cell -->
+                    
+                
+                    
+
+                    
+                    
+                    
+                    <!-- Check if there's a post on this day -->
+                    
+                        
+                            
+                            <td class="border px-4 py-2 bg-green-200">
+                                <a href="/2024/09/19/dealing_with_mental_health.html">12</a>
+                            </td>
+                        
+                    
+                        
+                            
+                            <td class="border px-4 py-2 bg-green-200">
+                                <a href="/2024/08/27/ux-designs.MARKUP">12</a>
+                            </td>
+                        
+                    
+
+                    <!-- If no post found, show an empty cell -->
+                    
+                
+                    
+
+                    
+                    
+                    
+                    <!-- Check if there's a post on this day -->
+                    
+                        
+                            
+                            <td class="border px-4 py-2 bg-green-200">
+                                <a href="/2024/09/19/dealing_with_mental_health.html">12</a>
+                            </td>
+                        
+                    
+                        
+                            
+                            <td class="border px-4 py-2 bg-green-200">
+                                <a href="/2024/08/27/ux-designs.MARKUP">12</a>
+                            </td>
+                        
+                    
+
+                    <!-- If no post found, show an empty cell -->
+                    
+                
+                    
+
+                    
+                    
+                    
+                    <!-- Check if there's a post on this day -->
+                    
+                        
+                            
+                            <td class="border px-4 py-2 bg-green-200">
+                                <a href="/2024/09/19/dealing_with_mental_health.html">12</a>
+                            </td>
+                        
+                    
+                        
+                            
+                            <td class="border px-4 py-2 bg-green-200">
+                                <a href="/2024/08/27/ux-designs.MARKUP">12</a>
+                            </td>
+                        
+                    
+
+                    <!-- If no post found, show an empty cell -->
+                    
+                
+                    
+
+                    
+                    
+                    
+                    <!-- Check if there's a post on this day -->
+                    
+                        
+                            
+                            <td class="border px-4 py-2 bg-green-200">
+                                <a href="/2024/09/19/dealing_with_mental_health.html">12</a>
+                            </td>
+                        
+                    
+                        
+                            
+                            <td class="border px-4 py-2 bg-green-200">
+                                <a href="/2024/08/27/ux-designs.MARKUP">12</a>
+                            </td>
+                        
+                    
+
+                    <!-- If no post found, show an empty cell -->
+                    
+                
+            </tr>
+            
+            
+            <tr>
+                <!-- Loop over the days of the week (Sun to Sat) -->
+                
+                    
+
+                    
+                    
+                    
+                    <!-- Check if there's a post on this day -->
+                    
+                        
+                            
+                            <td class="border px-4 py-2 bg-green-200">
+                                <a href="/2024/09/19/dealing_with_mental_health.html">13</a>
+                            </td>
+                        
+                    
+                        
+                            
+                            <td class="border px-4 py-2 bg-green-200">
+                                <a href="/2024/08/27/ux-designs.MARKUP">13</a>
+                            </td>
+                        
+                    
+
+                    <!-- If no post found, show an empty cell -->
+                    
+                
+                    
+
+                    
+                    
+                    
+                    <!-- Check if there's a post on this day -->
+                    
+                        
+                            
+                            <td class="border px-4 py-2 bg-green-200">
+                                <a href="/2024/09/19/dealing_with_mental_health.html">13</a>
+                            </td>
+                        
+                    
+                        
+                            
+                            <td class="border px-4 py-2 bg-green-200">
+                                <a href="/2024/08/27/ux-designs.MARKUP">13</a>
+                            </td>
+                        
+                    
+
+                    <!-- If no post found, show an empty cell -->
+                    
+                
+                    
+
+                    
+                    
+                    
+                    <!-- Check if there's a post on this day -->
+                    
+                        
+                            
+                            <td class="border px-4 py-2 bg-green-200">
+                                <a href="/2024/09/19/dealing_with_mental_health.html">13</a>
+                            </td>
+                        
+                    
+                        
+                            
+                            <td class="border px-4 py-2 bg-green-200">
+                                <a href="/2024/08/27/ux-designs.MARKUP">13</a>
+                            </td>
+                        
+                    
+
+                    <!-- If no post found, show an empty cell -->
+                    
+                
+                    
+
+                    
+                    
+                    
+                    <!-- Check if there's a post on this day -->
+                    
+                        
+                            
+                            <td class="border px-4 py-2 bg-green-200">
+                                <a href="/2024/09/19/dealing_with_mental_health.html">13</a>
+                            </td>
+                        
+                    
+                        
+                            
+                            <td class="border px-4 py-2 bg-green-200">
+                                <a href="/2024/08/27/ux-designs.MARKUP">13</a>
+                            </td>
+                        
+                    
+
+                    <!-- If no post found, show an empty cell -->
+                    
+                
+                    
+
+                    
+                    
+                    
+                    <!-- Check if there's a post on this day -->
+                    
+                        
+                            
+                            <td class="border px-4 py-2 bg-green-200">
+                                <a href="/2024/09/19/dealing_with_mental_health.html">13</a>
+                            </td>
+                        
+                    
+                        
+                            
+                            <td class="border px-4 py-2 bg-green-200">
+                                <a href="/2024/08/27/ux-designs.MARKUP">13</a>
+                            </td>
+                        
+                    
+
+                    <!-- If no post found, show an empty cell -->
+                    
+                
+                    
+
+                    
+                    
+                    
+                    <!-- Check if there's a post on this day -->
+                    
+                        
+                            
+                            <td class="border px-4 py-2 bg-green-200">
+                                <a href="/2024/09/19/dealing_with_mental_health.html">13</a>
+                            </td>
+                        
+                    
+                        
+                            
+                            <td class="border px-4 py-2 bg-green-200">
+                                <a href="/2024/08/27/ux-designs.MARKUP">13</a>
+                            </td>
+                        
+                    
+
+                    <!-- If no post found, show an empty cell -->
+                    
+                
+                    
+
+                    
+                    
+                    
+                    <!-- Check if there's a post on this day -->
+                    
+                        
+                            
+                            <td class="border px-4 py-2 bg-green-200">
+                                <a href="/2024/09/19/dealing_with_mental_health.html">13</a>
+                            </td>
+                        
+                    
+                        
+                            
+                            <td class="border px-4 py-2 bg-green-200">
+                                <a href="/2024/08/27/ux-designs.MARKUP">13</a>
+                            </td>
+                        
+                    
+
+                    <!-- If no post found, show an empty cell -->
+                    
+                
+            </tr>
+            
+            
+            <tr>
+                <!-- Loop over the days of the week (Sun to Sat) -->
+                
+                    
+
+                    
+                    
+                    
+                    <!-- Check if there's a post on this day -->
+                    
+                        
+                            
+                            <td class="border px-4 py-2 bg-green-200">
+                                <a href="/2024/09/19/dealing_with_mental_health.html">14</a>
+                            </td>
+                        
+                    
+                        
+                            
+                            <td class="border px-4 py-2 bg-green-200">
+                                <a href="/2024/08/27/ux-designs.MARKUP">14</a>
+                            </td>
+                        
+                    
+
+                    <!-- If no post found, show an empty cell -->
+                    
+                
+                    
+
+                    
+                    
+                    
+                    <!-- Check if there's a post on this day -->
+                    
+                        
+                            
+                            <td class="border px-4 py-2 bg-green-200">
+                                <a href="/2024/09/19/dealing_with_mental_health.html">14</a>
+                            </td>
+                        
+                    
+                        
+                            
+                            <td class="border px-4 py-2 bg-green-200">
+                                <a href="/2024/08/27/ux-designs.MARKUP">14</a>
+                            </td>
+                        
+                    
+
+                    <!-- If no post found, show an empty cell -->
+                    
+                
+                    
+
+                    
+                    
+                    
+                    <!-- Check if there's a post on this day -->
+                    
+                        
+                            
+                            <td class="border px-4 py-2 bg-green-200">
+                                <a href="/2024/09/19/dealing_with_mental_health.html">14</a>
+                            </td>
+                        
+                    
+                        
+                            
+                            <td class="border px-4 py-2 bg-green-200">
+                                <a href="/2024/08/27/ux-designs.MARKUP">14</a>
+                            </td>
+                        
+                    
+
+                    <!-- If no post found, show an empty cell -->
+                    
+                
+                    
+
+                    
+                    
+                    
+                    <!-- Check if there's a post on this day -->
+                    
+                        
+                            
+                            <td class="border px-4 py-2 bg-green-200">
+                                <a href="/2024/09/19/dealing_with_mental_health.html">14</a>
+                            </td>
+                        
+                    
+                        
+                            
+                            <td class="border px-4 py-2 bg-green-200">
+                                <a href="/2024/08/27/ux-designs.MARKUP">14</a>
+                            </td>
+                        
+                    
+
+                    <!-- If no post found, show an empty cell -->
+                    
+                
+                    
+
+                    
+                    
+                    
+                    <!-- Check if there's a post on this day -->
+                    
+                        
+                            
+                            <td class="border px-4 py-2 bg-green-200">
+                                <a href="/2024/09/19/dealing_with_mental_health.html">14</a>
+                            </td>
+                        
+                    
+                        
+                            
+                            <td class="border px-4 py-2 bg-green-200">
+                                <a href="/2024/08/27/ux-designs.MARKUP">14</a>
+                            </td>
+                        
+                    
+
+                    <!-- If no post found, show an empty cell -->
+                    
+                
+                    
+
+                    
+                    
+                    
+                    <!-- Check if there's a post on this day -->
+                    
+                        
+                            
+                            <td class="border px-4 py-2 bg-green-200">
+                                <a href="/2024/09/19/dealing_with_mental_health.html">14</a>
+                            </td>
+                        
+                    
+                        
+                            
+                            <td class="border px-4 py-2 bg-green-200">
+                                <a href="/2024/08/27/ux-designs.MARKUP">14</a>
+                            </td>
+                        
+                    
+
+                    <!-- If no post found, show an empty cell -->
+                    
+                
+                    
+
+                    
+                    
+                    
+                    <!-- Check if there's a post on this day -->
+                    
+                        
+                            
+                            <td class="border px-4 py-2 bg-green-200">
+                                <a href="/2024/09/19/dealing_with_mental_health.html">14</a>
+                            </td>
+                        
+                    
+                        
+                            
+                            <td class="border px-4 py-2 bg-green-200">
+                                <a href="/2024/08/27/ux-designs.MARKUP">14</a>
+                            </td>
+                        
+                    
+
+                    <!-- If no post found, show an empty cell -->
+                    
+                
+            </tr>
+            
+            
+            <tr>
+                <!-- Loop over the days of the week (Sun to Sat) -->
+                
+                    
+
+                    
+                    
+                    
+                    <!-- Check if there's a post on this day -->
+                    
+                        
+                            
+                            <td class="border px-4 py-2 bg-green-200">
+                                <a href="/2024/09/19/dealing_with_mental_health.html">15</a>
+                            </td>
+                        
+                    
+                        
+                            
+                            <td class="border px-4 py-2 bg-green-200">
+                                <a href="/2024/08/27/ux-designs.MARKUP">15</a>
+                            </td>
+                        
+                    
+
+                    <!-- If no post found, show an empty cell -->
+                    
+                
+                    
+
+                    
+                    
+                    
+                    <!-- Check if there's a post on this day -->
+                    
+                        
+                            
+                            <td class="border px-4 py-2 bg-green-200">
+                                <a href="/2024/09/19/dealing_with_mental_health.html">15</a>
+                            </td>
+                        
+                    
+                        
+                            
+                            <td class="border px-4 py-2 bg-green-200">
+                                <a href="/2024/08/27/ux-designs.MARKUP">15</a>
+                            </td>
+                        
+                    
+
+                    <!-- If no post found, show an empty cell -->
+                    
+                
+                    
+
+                    
+                    
+                    
+                    <!-- Check if there's a post on this day -->
+                    
+                        
+                            
+                            <td class="border px-4 py-2 bg-green-200">
+                                <a href="/2024/09/19/dealing_with_mental_health.html">15</a>
+                            </td>
+                        
+                    
+                        
+                            
+                            <td class="border px-4 py-2 bg-green-200">
+                                <a href="/2024/08/27/ux-designs.MARKUP">15</a>
+                            </td>
+                        
+                    
+
+                    <!-- If no post found, show an empty cell -->
+                    
+                
+                    
+
+                    
+                    
+                    
+                    <!-- Check if there's a post on this day -->
+                    
+                        
+                            
+                            <td class="border px-4 py-2 bg-green-200">
+                                <a href="/2024/09/19/dealing_with_mental_health.html">15</a>
+                            </td>
+                        
+                    
+                        
+                            
+                            <td class="border px-4 py-2 bg-green-200">
+                                <a href="/2024/08/27/ux-designs.MARKUP">15</a>
+                            </td>
+                        
+                    
+
+                    <!-- If no post found, show an empty cell -->
+                    
+                
+                    
+
+                    
+                    
+                    
+                    <!-- Check if there's a post on this day -->
+                    
+                        
+                            
+                            <td class="border px-4 py-2 bg-green-200">
+                                <a href="/2024/09/19/dealing_with_mental_health.html">15</a>
+                            </td>
+                        
+                    
+                        
+                            
+                            <td class="border px-4 py-2 bg-green-200">
+                                <a href="/2024/08/27/ux-designs.MARKUP">15</a>
+                            </td>
+                        
+                    
+
+                    <!-- If no post found, show an empty cell -->
+                    
+                
+                    
+
+                    
+                    
+                    
+                    <!-- Check if there's a post on this day -->
+                    
+                        
+                            
+                            <td class="border px-4 py-2 bg-green-200">
+                                <a href="/2024/09/19/dealing_with_mental_health.html">15</a>
+                            </td>
+                        
+                    
+                        
+                            
+                            <td class="border px-4 py-2 bg-green-200">
+                                <a href="/2024/08/27/ux-designs.MARKUP">15</a>
+                            </td>
+                        
+                    
+
+                    <!-- If no post found, show an empty cell -->
+                    
+                
+                    
+
+                    
+                    
+                    
+                    <!-- Check if there's a post on this day -->
+                    
+                        
+                            
+                            <td class="border px-4 py-2 bg-green-200">
+                                <a href="/2024/09/19/dealing_with_mental_health.html">15</a>
+                            </td>
+                        
+                    
+                        
+                            
+                            <td class="border px-4 py-2 bg-green-200">
+                                <a href="/2024/08/27/ux-designs.MARKUP">15</a>
+                            </td>
+                        
+                    
+
+                    <!-- If no post found, show an empty cell -->
+                    
+                
+            </tr>
+            
+            
+            <tr>
+                <!-- Loop over the days of the week (Sun to Sat) -->
+                
+                    
+
+                    
+                    
+                    
+                    <!-- Check if there's a post on this day -->
+                    
+                        
+                            
+                            <td class="border px-4 py-2 bg-green-200">
+                                <a href="/2024/09/19/dealing_with_mental_health.html">16</a>
+                            </td>
+                        
+                    
+                        
+                            
+                            <td class="border px-4 py-2 bg-green-200">
+                                <a href="/2024/08/27/ux-designs.MARKUP">16</a>
+                            </td>
+                        
+                    
+
+                    <!-- If no post found, show an empty cell -->
+                    
+                
+                    
+
+                    
+                    
+                    
+                    <!-- Check if there's a post on this day -->
+                    
+                        
+                            
+                            <td class="border px-4 py-2 bg-green-200">
+                                <a href="/2024/09/19/dealing_with_mental_health.html">16</a>
+                            </td>
+                        
+                    
+                        
+                            
+                            <td class="border px-4 py-2 bg-green-200">
+                                <a href="/2024/08/27/ux-designs.MARKUP">16</a>
+                            </td>
+                        
+                    
+
+                    <!-- If no post found, show an empty cell -->
+                    
+                
+                    
+
+                    
+                    
+                    
+                    <!-- Check if there's a post on this day -->
+                    
+                        
+                            
+                            <td class="border px-4 py-2 bg-green-200">
+                                <a href="/2024/09/19/dealing_with_mental_health.html">16</a>
+                            </td>
+                        
+                    
+                        
+                            
+                            <td class="border px-4 py-2 bg-green-200">
+                                <a href="/2024/08/27/ux-designs.MARKUP">16</a>
+                            </td>
+                        
+                    
+
+                    <!-- If no post found, show an empty cell -->
+                    
+                
+                    
+
+                    
+                    
+                    
+                    <!-- Check if there's a post on this day -->
+                    
+                        
+                            
+                            <td class="border px-4 py-2 bg-green-200">
+                                <a href="/2024/09/19/dealing_with_mental_health.html">16</a>
+                            </td>
+                        
+                    
+                        
+                            
+                            <td class="border px-4 py-2 bg-green-200">
+                                <a href="/2024/08/27/ux-designs.MARKUP">16</a>
+                            </td>
+                        
+                    
+
+                    <!-- If no post found, show an empty cell -->
+                    
+                
+                    
+
+                    
+                    
+                    
+                    <!-- Check if there's a post on this day -->
+                    
+                        
+                            
+                            <td class="border px-4 py-2 bg-green-200">
+                                <a href="/2024/09/19/dealing_with_mental_health.html">16</a>
+                            </td>
+                        
+                    
+                        
+                            
+                            <td class="border px-4 py-2 bg-green-200">
+                                <a href="/2024/08/27/ux-designs.MARKUP">16</a>
+                            </td>
+                        
+                    
+
+                    <!-- If no post found, show an empty cell -->
+                    
+                
+                    
+
+                    
+                    
+                    
+                    <!-- Check if there's a post on this day -->
+                    
+                        
+                            
+                            <td class="border px-4 py-2 bg-green-200">
+                                <a href="/2024/09/19/dealing_with_mental_health.html">16</a>
+                            </td>
+                        
+                    
+                        
+                            
+                            <td class="border px-4 py-2 bg-green-200">
+                                <a href="/2024/08/27/ux-designs.MARKUP">16</a>
+                            </td>
+                        
+                    
+
+                    <!-- If no post found, show an empty cell -->
+                    
+                
+                    
+
+                    
+                    
+                    
+                    <!-- Check if there's a post on this day -->
+                    
+                        
+                            
+                            <td class="border px-4 py-2 bg-green-200">
+                                <a href="/2024/09/19/dealing_with_mental_health.html">16</a>
+                            </td>
+                        
+                    
+                        
+                            
+                            <td class="border px-4 py-2 bg-green-200">
+                                <a href="/2024/08/27/ux-designs.MARKUP">16</a>
+                            </td>
+                        
+                    
+
+                    <!-- If no post found, show an empty cell -->
+                    
+                
+            </tr>
+            
+            
+            <tr>
+                <!-- Loop over the days of the week (Sun to Sat) -->
+                
+                    
+
+                    
+                    
+                    
+                    <!-- Check if there's a post on this day -->
+                    
+                        
+                            
+                            <td class="border px-4 py-2 bg-green-200">
+                                <a href="/2024/09/19/dealing_with_mental_health.html">17</a>
+                            </td>
+                        
+                    
+                        
+                            
+                            <td class="border px-4 py-2 bg-green-200">
+                                <a href="/2024/08/27/ux-designs.MARKUP">17</a>
+                            </td>
+                        
+                    
+
+                    <!-- If no post found, show an empty cell -->
+                    
+                
+                    
+
+                    
+                    
+                    
+                    <!-- Check if there's a post on this day -->
+                    
+                        
+                            
+                            <td class="border px-4 py-2 bg-green-200">
+                                <a href="/2024/09/19/dealing_with_mental_health.html">17</a>
+                            </td>
+                        
+                    
+                        
+                            
+                            <td class="border px-4 py-2 bg-green-200">
+                                <a href="/2024/08/27/ux-designs.MARKUP">17</a>
+                            </td>
+                        
+                    
+
+                    <!-- If no post found, show an empty cell -->
+                    
+                
+                    
+
+                    
+                    
+                    
+                    <!-- Check if there's a post on this day -->
+                    
+                        
+                            
+                            <td class="border px-4 py-2 bg-green-200">
+                                <a href="/2024/09/19/dealing_with_mental_health.html">17</a>
+                            </td>
+                        
+                    
+                        
+                            
+                            <td class="border px-4 py-2 bg-green-200">
+                                <a href="/2024/08/27/ux-designs.MARKUP">17</a>
+                            </td>
+                        
+                    
+
+                    <!-- If no post found, show an empty cell -->
+                    
+                
+                    
+
+                    
+                    
+                    
+                    <!-- Check if there's a post on this day -->
+                    
+                        
+                            
+                            <td class="border px-4 py-2 bg-green-200">
+                                <a href="/2024/09/19/dealing_with_mental_health.html">17</a>
+                            </td>
+                        
+                    
+                        
+                            
+                            <td class="border px-4 py-2 bg-green-200">
+                                <a href="/2024/08/27/ux-designs.MARKUP">17</a>
+                            </td>
+                        
+                    
+
+                    <!-- If no post found, show an empty cell -->
+                    
+                
+                    
+
+                    
+                    
+                    
+                    <!-- Check if there's a post on this day -->
+                    
+                        
+                            
+                            <td class="border px-4 py-2 bg-green-200">
+                                <a href="/2024/09/19/dealing_with_mental_health.html">17</a>
+                            </td>
+                        
+                    
+                        
+                            
+                            <td class="border px-4 py-2 bg-green-200">
+                                <a href="/2024/08/27/ux-designs.MARKUP">17</a>
+                            </td>
+                        
+                    
+
+                    <!-- If no post found, show an empty cell -->
+                    
+                
+                    
+
+                    
+                    
+                    
+                    <!-- Check if there's a post on this day -->
+                    
+                        
+                            
+                            <td class="border px-4 py-2 bg-green-200">
+                                <a href="/2024/09/19/dealing_with_mental_health.html">17</a>
+                            </td>
+                        
+                    
+                        
+                            
+                            <td class="border px-4 py-2 bg-green-200">
+                                <a href="/2024/08/27/ux-designs.MARKUP">17</a>
+                            </td>
+                        
+                    
+
+                    <!-- If no post found, show an empty cell -->
+                    
+                
+                    
+
+                    
+                    
+                    
+                    <!-- Check if there's a post on this day -->
+                    
+                        
+                            
+                            <td class="border px-4 py-2 bg-green-200">
+                                <a href="/2024/09/19/dealing_with_mental_health.html">17</a>
+                            </td>
+                        
+                    
+                        
+                            
+                            <td class="border px-4 py-2 bg-green-200">
+                                <a href="/2024/08/27/ux-designs.MARKUP">17</a>
+                            </td>
+                        
+                    
+
+                    <!-- If no post found, show an empty cell -->
+                    
+                
+            </tr>
+            
+            
+            <tr>
+                <!-- Loop over the days of the week (Sun to Sat) -->
+                
+                    
+
+                    
+                    
+                    
+                    <!-- Check if there's a post on this day -->
+                    
+                        
+                            
+                            <td class="border px-4 py-2 bg-green-200">
+                                <a href="/2024/09/19/dealing_with_mental_health.html">18</a>
+                            </td>
+                        
+                    
+                        
+                            
+                            <td class="border px-4 py-2 bg-green-200">
+                                <a href="/2024/08/27/ux-designs.MARKUP">18</a>
+                            </td>
+                        
+                    
+
+                    <!-- If no post found, show an empty cell -->
+                    
+                
+                    
+
+                    
+                    
+                    
+                    <!-- Check if there's a post on this day -->
+                    
+                        
+                            
+                            <td class="border px-4 py-2 bg-green-200">
+                                <a href="/2024/09/19/dealing_with_mental_health.html">18</a>
+                            </td>
+                        
+                    
+                        
+                            
+                            <td class="border px-4 py-2 bg-green-200">
+                                <a href="/2024/08/27/ux-designs.MARKUP">18</a>
+                            </td>
+                        
+                    
+
+                    <!-- If no post found, show an empty cell -->
+                    
+                
+                    
+
+                    
+                    
+                    
+                    <!-- Check if there's a post on this day -->
+                    
+                        
+                            
+                            <td class="border px-4 py-2 bg-green-200">
+                                <a href="/2024/09/19/dealing_with_mental_health.html">18</a>
+                            </td>
+                        
+                    
+                        
+                            
+                            <td class="border px-4 py-2 bg-green-200">
+                                <a href="/2024/08/27/ux-designs.MARKUP">18</a>
+                            </td>
+                        
+                    
+
+                    <!-- If no post found, show an empty cell -->
+                    
+                
+                    
+
+                    
+                    
+                    
+                    <!-- Check if there's a post on this day -->
+                    
+                        
+                            
+                            <td class="border px-4 py-2 bg-green-200">
+                                <a href="/2024/09/19/dealing_with_mental_health.html">18</a>
+                            </td>
+                        
+                    
+                        
+                            
+                            <td class="border px-4 py-2 bg-green-200">
+                                <a href="/2024/08/27/ux-designs.MARKUP">18</a>
+                            </td>
+                        
+                    
+
+                    <!-- If no post found, show an empty cell -->
+                    
+                
+                    
+
+                    
+                    
+                    
+                    <!-- Check if there's a post on this day -->
+                    
+                        
+                            
+                            <td class="border px-4 py-2 bg-green-200">
+                                <a href="/2024/09/19/dealing_with_mental_health.html">18</a>
+                            </td>
+                        
+                    
+                        
+                            
+                            <td class="border px-4 py-2 bg-green-200">
+                                <a href="/2024/08/27/ux-designs.MARKUP">18</a>
+                            </td>
+                        
+                    
+
+                    <!-- If no post found, show an empty cell -->
+                    
+                
+                    
+
+                    
+                    
+                    
+                    <!-- Check if there's a post on this day -->
+                    
+                        
+                            
+                            <td class="border px-4 py-2 bg-green-200">
+                                <a href="/2024/09/19/dealing_with_mental_health.html">18</a>
+                            </td>
+                        
+                    
+                        
+                            
+                            <td class="border px-4 py-2 bg-green-200">
+                                <a href="/2024/08/27/ux-designs.MARKUP">18</a>
+                            </td>
+                        
+                    
+
+                    <!-- If no post found, show an empty cell -->
+                    
+                
+                    
+
+                    
+                    
+                    
+                    <!-- Check if there's a post on this day -->
+                    
+                        
+                            
+                            <td class="border px-4 py-2 bg-green-200">
+                                <a href="/2024/09/19/dealing_with_mental_health.html">18</a>
+                            </td>
+                        
+                    
+                        
+                            
+                            <td class="border px-4 py-2 bg-green-200">
+                                <a href="/2024/08/27/ux-designs.MARKUP">18</a>
+                            </td>
+                        
+                    
+
+                    <!-- If no post found, show an empty cell -->
+                    
+                
+            </tr>
+            
+            
+            <tr>
+                <!-- Loop over the days of the week (Sun to Sat) -->
+                
+                    
+
+                    
+                    
+                    
+                    <!-- Check if there's a post on this day -->
+                    
+                        
+                            
+                            <td class="border px-4 py-2 bg-green-200">
+                                <a href="/2024/09/19/dealing_with_mental_health.html">19</a>
+                            </td>
+                        
+                    
+                        
+                            
+                            <td class="border px-4 py-2 bg-green-200">
+                                <a href="/2024/08/27/ux-designs.MARKUP">19</a>
+                            </td>
+                        
+                    
+
+                    <!-- If no post found, show an empty cell -->
+                    
+                
+                    
+
+                    
+                    
+                    
+                    <!-- Check if there's a post on this day -->
+                    
+                        
+                            
+                            <td class="border px-4 py-2 bg-green-200">
+                                <a href="/2024/09/19/dealing_with_mental_health.html">19</a>
+                            </td>
+                        
+                    
+                        
+                            
+                            <td class="border px-4 py-2 bg-green-200">
+                                <a href="/2024/08/27/ux-designs.MARKUP">19</a>
+                            </td>
+                        
+                    
+
+                    <!-- If no post found, show an empty cell -->
+                    
+                
+                    
+
+                    
+                    
+                    
+                    <!-- Check if there's a post on this day -->
+                    
+                        
+                            
+                            <td class="border px-4 py-2 bg-green-200">
+                                <a href="/2024/09/19/dealing_with_mental_health.html">19</a>
+                            </td>
+                        
+                    
+                        
+                            
+                            <td class="border px-4 py-2 bg-green-200">
+                                <a href="/2024/08/27/ux-designs.MARKUP">19</a>
+                            </td>
+                        
+                    
+
+                    <!-- If no post found, show an empty cell -->
+                    
+                
+                    
+
+                    
+                    
+                    
+                    <!-- Check if there's a post on this day -->
+                    
+                        
+                            
+                            <td class="border px-4 py-2 bg-green-200">
+                                <a href="/2024/09/19/dealing_with_mental_health.html">19</a>
+                            </td>
+                        
+                    
+                        
+                            
+                            <td class="border px-4 py-2 bg-green-200">
+                                <a href="/2024/08/27/ux-designs.MARKUP">19</a>
+                            </td>
+                        
+                    
+
+                    <!-- If no post found, show an empty cell -->
+                    
+                
+                    
+
+                    
+                    
+                    
+                    <!-- Check if there's a post on this day -->
+                    
+                        
+                            
+                            <td class="border px-4 py-2 bg-green-200">
+                                <a href="/2024/09/19/dealing_with_mental_health.html">19</a>
+                            </td>
+                        
+                    
+                        
+                            
+                            <td class="border px-4 py-2 bg-green-200">
+                                <a href="/2024/08/27/ux-designs.MARKUP">19</a>
+                            </td>
+                        
+                    
+
+                    <!-- If no post found, show an empty cell -->
+                    
+                
+                    
+
+                    
+                    
+                    
+                    <!-- Check if there's a post on this day -->
+                    
+                        
+                            
+                            <td class="border px-4 py-2 bg-green-200">
+                                <a href="/2024/09/19/dealing_with_mental_health.html">19</a>
+                            </td>
+                        
+                    
+                        
+                            
+                            <td class="border px-4 py-2 bg-green-200">
+                                <a href="/2024/08/27/ux-designs.MARKUP">19</a>
+                            </td>
+                        
+                    
+
+                    <!-- If no post found, show an empty cell -->
+                    
+                
+                    
+
+                    
+                    
+                    
+                    <!-- Check if there's a post on this day -->
+                    
+                        
+                            
+                            <td class="border px-4 py-2 bg-green-200">
+                                <a href="/2024/09/19/dealing_with_mental_health.html">19</a>
+                            </td>
+                        
+                    
+                        
+                            
+                            <td class="border px-4 py-2 bg-green-200">
+                                <a href="/2024/08/27/ux-designs.MARKUP">19</a>
+                            </td>
+                        
+                    
+
+                    <!-- If no post found, show an empty cell -->
+                    
+                
+            </tr>
+            
+            
+            <tr>
+                <!-- Loop over the days of the week (Sun to Sat) -->
+                
+                    
+
+                    
+                    
+                    
+                    <!-- Check if there's a post on this day -->
+                    
+                        
+                            
+                            <td class="border px-4 py-2 bg-green-200">
+                                <a href="/2024/09/19/dealing_with_mental_health.html">20</a>
+                            </td>
+                        
+                    
+                        
+                            
+                            <td class="border px-4 py-2 bg-green-200">
+                                <a href="/2024/08/27/ux-designs.MARKUP">20</a>
+                            </td>
+                        
+                    
+
+                    <!-- If no post found, show an empty cell -->
+                    
+                
+                    
+
+                    
+                    
+                    
+                    <!-- Check if there's a post on this day -->
+                    
+                        
+                            
+                            <td class="border px-4 py-2 bg-green-200">
+                                <a href="/2024/09/19/dealing_with_mental_health.html">20</a>
+                            </td>
+                        
+                    
+                        
+                            
+                            <td class="border px-4 py-2 bg-green-200">
+                                <a href="/2024/08/27/ux-designs.MARKUP">20</a>
+                            </td>
+                        
+                    
+
+                    <!-- If no post found, show an empty cell -->
+                    
+                
+                    
+
+                    
+                    
+                    
+                    <!-- Check if there's a post on this day -->
+                    
+                        
+                            
+                            <td class="border px-4 py-2 bg-green-200">
+                                <a href="/2024/09/19/dealing_with_mental_health.html">20</a>
+                            </td>
+                        
+                    
+                        
+                            
+                            <td class="border px-4 py-2 bg-green-200">
+                                <a href="/2024/08/27/ux-designs.MARKUP">20</a>
+                            </td>
+                        
+                    
+
+                    <!-- If no post found, show an empty cell -->
+                    
+                
+                    
+
+                    
+                    
+                    
+                    <!-- Check if there's a post on this day -->
+                    
+                        
+                            
+                            <td class="border px-4 py-2 bg-green-200">
+                                <a href="/2024/09/19/dealing_with_mental_health.html">20</a>
+                            </td>
+                        
+                    
+                        
+                            
+                            <td class="border px-4 py-2 bg-green-200">
+                                <a href="/2024/08/27/ux-designs.MARKUP">20</a>
+                            </td>
+                        
+                    
+
+                    <!-- If no post found, show an empty cell -->
+                    
+                
+                    
+
+                    
+                    
+                    
+                    <!-- Check if there's a post on this day -->
+                    
+                        
+                            
+                            <td class="border px-4 py-2 bg-green-200">
+                                <a href="/2024/09/19/dealing_with_mental_health.html">20</a>
+                            </td>
+                        
+                    
+                        
+                            
+                            <td class="border px-4 py-2 bg-green-200">
+                                <a href="/2024/08/27/ux-designs.MARKUP">20</a>
+                            </td>
+                        
+                    
+
+                    <!-- If no post found, show an empty cell -->
+                    
+                
+                    
+
+                    
+                    
+                    
+                    <!-- Check if there's a post on this day -->
+                    
+                        
+                            
+                            <td class="border px-4 py-2 bg-green-200">
+                                <a href="/2024/09/19/dealing_with_mental_health.html">20</a>
+                            </td>
+                        
+                    
+                        
+                            
+                            <td class="border px-4 py-2 bg-green-200">
+                                <a href="/2024/08/27/ux-designs.MARKUP">20</a>
+                            </td>
+                        
+                    
+
+                    <!-- If no post found, show an empty cell -->
+                    
+                
+                    
+
+                    
+                    
+                    
+                    <!-- Check if there's a post on this day -->
+                    
+                        
+                            
+                            <td class="border px-4 py-2 bg-green-200">
+                                <a href="/2024/09/19/dealing_with_mental_health.html">20</a>
+                            </td>
+                        
+                    
+                        
+                            
+                            <td class="border px-4 py-2 bg-green-200">
+                                <a href="/2024/08/27/ux-designs.MARKUP">20</a>
+                            </td>
+                        
+                    
+
+                    <!-- If no post found, show an empty cell -->
+                    
+                
+            </tr>
+            
+            
+            <tr>
+                <!-- Loop over the days of the week (Sun to Sat) -->
+                
+                    
+
+                    
+                    
+                    
+                    <!-- Check if there's a post on this day -->
+                    
+                        
+                            
+                            <td class="border px-4 py-2 bg-green-200">
+                                <a href="/2024/09/19/dealing_with_mental_health.html">21</a>
+                            </td>
+                        
+                    
+                        
+                            
+                            <td class="border px-4 py-2 bg-green-200">
+                                <a href="/2024/08/27/ux-designs.MARKUP">21</a>
+                            </td>
+                        
+                    
+
+                    <!-- If no post found, show an empty cell -->
+                    
+                
+                    
+
+                    
+                    
+                    
+                    <!-- Check if there's a post on this day -->
+                    
+                        
+                            
+                            <td class="border px-4 py-2 bg-green-200">
+                                <a href="/2024/09/19/dealing_with_mental_health.html">21</a>
+                            </td>
+                        
+                    
+                        
+                            
+                            <td class="border px-4 py-2 bg-green-200">
+                                <a href="/2024/08/27/ux-designs.MARKUP">21</a>
+                            </td>
+                        
+                    
+
+                    <!-- If no post found, show an empty cell -->
+                    
+                
+                    
+
+                    
+                    
+                    
+                    <!-- Check if there's a post on this day -->
+                    
+                        
+                            
+                            <td class="border px-4 py-2 bg-green-200">
+                                <a href="/2024/09/19/dealing_with_mental_health.html">21</a>
+                            </td>
+                        
+                    
+                        
+                            
+                            <td class="border px-4 py-2 bg-green-200">
+                                <a href="/2024/08/27/ux-designs.MARKUP">21</a>
+                            </td>
+                        
+                    
+
+                    <!-- If no post found, show an empty cell -->
+                    
+                
+                    
+
+                    
+                    
+                    
+                    <!-- Check if there's a post on this day -->
+                    
+                        
+                            
+                            <td class="border px-4 py-2 bg-green-200">
+                                <a href="/2024/09/19/dealing_with_mental_health.html">21</a>
+                            </td>
+                        
+                    
+                        
+                            
+                            <td class="border px-4 py-2 bg-green-200">
+                                <a href="/2024/08/27/ux-designs.MARKUP">21</a>
+                            </td>
+                        
+                    
+
+                    <!-- If no post found, show an empty cell -->
+                    
+                
+                    
+
+                    
+                    
+                    
+                    <!-- Check if there's a post on this day -->
+                    
+                        
+                            
+                            <td class="border px-4 py-2 bg-green-200">
+                                <a href="/2024/09/19/dealing_with_mental_health.html">21</a>
+                            </td>
+                        
+                    
+                        
+                            
+                            <td class="border px-4 py-2 bg-green-200">
+                                <a href="/2024/08/27/ux-designs.MARKUP">21</a>
+                            </td>
+                        
+                    
+
+                    <!-- If no post found, show an empty cell -->
+                    
+                
+                    
+
+                    
+                    
+                    
+                    <!-- Check if there's a post on this day -->
+                    
+                        
+                            
+                            <td class="border px-4 py-2 bg-green-200">
+                                <a href="/2024/09/19/dealing_with_mental_health.html">21</a>
+                            </td>
+                        
+                    
+                        
+                            
+                            <td class="border px-4 py-2 bg-green-200">
+                                <a href="/2024/08/27/ux-designs.MARKUP">21</a>
+                            </td>
+                        
+                    
+
+                    <!-- If no post found, show an empty cell -->
+                    
+                
+                    
+
+                    
+                    
+                    
+                    <!-- Check if there's a post on this day -->
+                    
+                        
+                            
+                            <td class="border px-4 py-2 bg-green-200">
+                                <a href="/2024/09/19/dealing_with_mental_health.html">21</a>
+                            </td>
+                        
+                    
+                        
+                            
+                            <td class="border px-4 py-2 bg-green-200">
+                                <a href="/2024/08/27/ux-designs.MARKUP">21</a>
+                            </td>
+                        
+                    
+
+                    <!-- If no post found, show an empty cell -->
+                    
+                
+            </tr>
+            
+            
+            <tr>
+                <!-- Loop over the days of the week (Sun to Sat) -->
+                
+                    
+
+                    
+                    
+                    
+                    <!-- Check if there's a post on this day -->
+                    
+                        
+                            
+                            <td class="border px-4 py-2 bg-green-200">
+                                <a href="/2024/09/19/dealing_with_mental_health.html">22</a>
+                            </td>
+                        
+                    
+                        
+                            
+                            <td class="border px-4 py-2 bg-green-200">
+                                <a href="/2024/08/27/ux-designs.MARKUP">22</a>
+                            </td>
+                        
+                    
+
+                    <!-- If no post found, show an empty cell -->
+                    
+                
+                    
+
+                    
+                    
+                    
+                    <!-- Check if there's a post on this day -->
+                    
+                        
+                            
+                            <td class="border px-4 py-2 bg-green-200">
+                                <a href="/2024/09/19/dealing_with_mental_health.html">22</a>
+                            </td>
+                        
+                    
+                        
+                            
+                            <td class="border px-4 py-2 bg-green-200">
+                                <a href="/2024/08/27/ux-designs.MARKUP">22</a>
+                            </td>
+                        
+                    
+
+                    <!-- If no post found, show an empty cell -->
+                    
+                
+                    
+
+                    
+                    
+                    
+                    <!-- Check if there's a post on this day -->
+                    
+                        
+                            
+                            <td class="border px-4 py-2 bg-green-200">
+                                <a href="/2024/09/19/dealing_with_mental_health.html">22</a>
+                            </td>
+                        
+                    
+                        
+                            
+                            <td class="border px-4 py-2 bg-green-200">
+                                <a href="/2024/08/27/ux-designs.MARKUP">22</a>
+                            </td>
+                        
+                    
+
+                    <!-- If no post found, show an empty cell -->
+                    
+                
+                    
+
+                    
+                    
+                    
+                    <!-- Check if there's a post on this day -->
+                    
+                        
+                            
+                            <td class="border px-4 py-2 bg-green-200">
+                                <a href="/2024/09/19/dealing_with_mental_health.html">22</a>
+                            </td>
+                        
+                    
+                        
+                            
+                            <td class="border px-4 py-2 bg-green-200">
+                                <a href="/2024/08/27/ux-designs.MARKUP">22</a>
+                            </td>
+                        
+                    
+
+                    <!-- If no post found, show an empty cell -->
+                    
+                
+                    
+
+                    
+                    
+                    
+                    <!-- Check if there's a post on this day -->
+                    
+                        
+                            
+                            <td class="border px-4 py-2 bg-green-200">
+                                <a href="/2024/09/19/dealing_with_mental_health.html">22</a>
+                            </td>
+                        
+                    
+                        
+                            
+                            <td class="border px-4 py-2 bg-green-200">
+                                <a href="/2024/08/27/ux-designs.MARKUP">22</a>
+                            </td>
+                        
+                    
+
+                    <!-- If no post found, show an empty cell -->
+                    
+                
+                    
+
+                    
+                    
+                    
+                    <!-- Check if there's a post on this day -->
+                    
+                        
+                            
+                            <td class="border px-4 py-2 bg-green-200">
+                                <a href="/2024/09/19/dealing_with_mental_health.html">22</a>
+                            </td>
+                        
+                    
+                        
+                            
+                            <td class="border px-4 py-2 bg-green-200">
+                                <a href="/2024/08/27/ux-designs.MARKUP">22</a>
+                            </td>
+                        
+                    
+
+                    <!-- If no post found, show an empty cell -->
+                    
+                
+                    
+
+                    
+                    
+                    
+                    <!-- Check if there's a post on this day -->
+                    
+                        
+                            
+                            <td class="border px-4 py-2 bg-green-200">
+                                <a href="/2024/09/19/dealing_with_mental_health.html">22</a>
+                            </td>
+                        
+                    
+                        
+                            
+                            <td class="border px-4 py-2 bg-green-200">
+                                <a href="/2024/08/27/ux-designs.MARKUP">22</a>
+                            </td>
+                        
+                    
+
+                    <!-- If no post found, show an empty cell -->
+                    
+                
+            </tr>
+            
+            
+            <tr>
+                <!-- Loop over the days of the week (Sun to Sat) -->
+                
+                    
+
+                    
+                    
+                    
+                    <!-- Check if there's a post on this day -->
+                    
+                        
+                            
+                            <td class="border px-4 py-2 bg-green-200">
+                                <a href="/2024/09/19/dealing_with_mental_health.html">23</a>
+                            </td>
+                        
+                    
+                        
+                            
+                            <td class="border px-4 py-2 bg-green-200">
+                                <a href="/2024/08/27/ux-designs.MARKUP">23</a>
+                            </td>
+                        
+                    
+
+                    <!-- If no post found, show an empty cell -->
+                    
+                
+                    
+
+                    
+                    
+                    
+                    <!-- Check if there's a post on this day -->
+                    
+                        
+                            
+                            <td class="border px-4 py-2 bg-green-200">
+                                <a href="/2024/09/19/dealing_with_mental_health.html">23</a>
+                            </td>
+                        
+                    
+                        
+                            
+                            <td class="border px-4 py-2 bg-green-200">
+                                <a href="/2024/08/27/ux-designs.MARKUP">23</a>
+                            </td>
+                        
+                    
+
+                    <!-- If no post found, show an empty cell -->
+                    
+                
+                    
+
+                    
+                    
+                    
+                    <!-- Check if there's a post on this day -->
+                    
+                        
+                            
+                            <td class="border px-4 py-2 bg-green-200">
+                                <a href="/2024/09/19/dealing_with_mental_health.html">23</a>
+                            </td>
+                        
+                    
+                        
+                            
+                            <td class="border px-4 py-2 bg-green-200">
+                                <a href="/2024/08/27/ux-designs.MARKUP">23</a>
+                            </td>
+                        
+                    
+
+                    <!-- If no post found, show an empty cell -->
+                    
+                
+                    
+
+                    
+                    
+                    
+                    <!-- Check if there's a post on this day -->
+                    
+                        
+                            
+                            <td class="border px-4 py-2 bg-green-200">
+                                <a href="/2024/09/19/dealing_with_mental_health.html">23</a>
+                            </td>
+                        
+                    
+                        
+                            
+                            <td class="border px-4 py-2 bg-green-200">
+                                <a href="/2024/08/27/ux-designs.MARKUP">23</a>
+                            </td>
+                        
+                    
+
+                    <!-- If no post found, show an empty cell -->
+                    
+                
+                    
+
+                    
+                    
+                    
+                    <!-- Check if there's a post on this day -->
+                    
+                        
+                            
+                            <td class="border px-4 py-2 bg-green-200">
+                                <a href="/2024/09/19/dealing_with_mental_health.html">23</a>
+                            </td>
+                        
+                    
+                        
+                            
+                            <td class="border px-4 py-2 bg-green-200">
+                                <a href="/2024/08/27/ux-designs.MARKUP">23</a>
+                            </td>
+                        
+                    
+
+                    <!-- If no post found, show an empty cell -->
+                    
+                
+                    
+
+                    
+                    
+                    
+                    <!-- Check if there's a post on this day -->
+                    
+                        
+                            
+                            <td class="border px-4 py-2 bg-green-200">
+                                <a href="/2024/09/19/dealing_with_mental_health.html">23</a>
+                            </td>
+                        
+                    
+                        
+                            
+                            <td class="border px-4 py-2 bg-green-200">
+                                <a href="/2024/08/27/ux-designs.MARKUP">23</a>
+                            </td>
+                        
+                    
+
+                    <!-- If no post found, show an empty cell -->
+                    
+                
+                    
+
+                    
+                    
+                    
+                    <!-- Check if there's a post on this day -->
+                    
+                        
+                            
+                            <td class="border px-4 py-2 bg-green-200">
+                                <a href="/2024/09/19/dealing_with_mental_health.html">23</a>
+                            </td>
+                        
+                    
+                        
+                            
+                            <td class="border px-4 py-2 bg-green-200">
+                                <a href="/2024/08/27/ux-designs.MARKUP">23</a>
+                            </td>
+                        
+                    
+
+                    <!-- If no post found, show an empty cell -->
+                    
+                
+            </tr>
+            
+            
+            <tr>
+                <!-- Loop over the days of the week (Sun to Sat) -->
+                
+                    
+
+                    
+                    
+                    
+                    <!-- Check if there's a post on this day -->
+                    
+                        
+                            
+                            <td class="border px-4 py-2 bg-green-200">
+                                <a href="/2024/09/19/dealing_with_mental_health.html">24</a>
+                            </td>
+                        
+                    
+                        
+                            
+                            <td class="border px-4 py-2 bg-green-200">
+                                <a href="/2024/08/27/ux-designs.MARKUP">24</a>
+                            </td>
+                        
+                    
+
+                    <!-- If no post found, show an empty cell -->
+                    
+                
+                    
+
+                    
+                    
+                    
+                    <!-- Check if there's a post on this day -->
+                    
+                        
+                            
+                            <td class="border px-4 py-2 bg-green-200">
+                                <a href="/2024/09/19/dealing_with_mental_health.html">24</a>
+                            </td>
+                        
+                    
+                        
+                            
+                            <td class="border px-4 py-2 bg-green-200">
+                                <a href="/2024/08/27/ux-designs.MARKUP">24</a>
+                            </td>
+                        
+                    
+
+                    <!-- If no post found, show an empty cell -->
+                    
+                
+                    
+
+                    
+                    
+                    
+                    <!-- Check if there's a post on this day -->
+                    
+                        
+                            
+                            <td class="border px-4 py-2 bg-green-200">
+                                <a href="/2024/09/19/dealing_with_mental_health.html">24</a>
+                            </td>
+                        
+                    
+                        
+                            
+                            <td class="border px-4 py-2 bg-green-200">
+                                <a href="/2024/08/27/ux-designs.MARKUP">24</a>
+                            </td>
+                        
+                    
+
+                    <!-- If no post found, show an empty cell -->
+                    
+                
+                    
+
+                    
+                    
+                    
+                    <!-- Check if there's a post on this day -->
+                    
+                        
+                            
+                            <td class="border px-4 py-2 bg-green-200">
+                                <a href="/2024/09/19/dealing_with_mental_health.html">24</a>
+                            </td>
+                        
+                    
+                        
+                            
+                            <td class="border px-4 py-2 bg-green-200">
+                                <a href="/2024/08/27/ux-designs.MARKUP">24</a>
+                            </td>
+                        
+                    
+
+                    <!-- If no post found, show an empty cell -->
+                    
+                
+                    
+
+                    
+                    
+                    
+                    <!-- Check if there's a post on this day -->
+                    
+                        
+                            
+                            <td class="border px-4 py-2 bg-green-200">
+                                <a href="/2024/09/19/dealing_with_mental_health.html">24</a>
+                            </td>
+                        
+                    
+                        
+                            
+                            <td class="border px-4 py-2 bg-green-200">
+                                <a href="/2024/08/27/ux-designs.MARKUP">24</a>
+                            </td>
+                        
+                    
+
+                    <!-- If no post found, show an empty cell -->
+                    
+                
+                    
+
+                    
+                    
+                    
+                    <!-- Check if there's a post on this day -->
+                    
+                        
+                            
+                            <td class="border px-4 py-2 bg-green-200">
+                                <a href="/2024/09/19/dealing_with_mental_health.html">24</a>
+                            </td>
+                        
+                    
+                        
+                            
+                            <td class="border px-4 py-2 bg-green-200">
+                                <a href="/2024/08/27/ux-designs.MARKUP">24</a>
+                            </td>
+                        
+                    
+
+                    <!-- If no post found, show an empty cell -->
+                    
+                
+                    
+
+                    
+                    
+                    
+                    <!-- Check if there's a post on this day -->
+                    
+                        
+                            
+                            <td class="border px-4 py-2 bg-green-200">
+                                <a href="/2024/09/19/dealing_with_mental_health.html">24</a>
+                            </td>
+                        
+                    
+                        
+                            
+                            <td class="border px-4 py-2 bg-green-200">
+                                <a href="/2024/08/27/ux-designs.MARKUP">24</a>
+                            </td>
+                        
+                    
+
+                    <!-- If no post found, show an empty cell -->
+                    
+                
+            </tr>
+            
+            
+            <tr>
+                <!-- Loop over the days of the week (Sun to Sat) -->
+                
+                    
+
+                    
+                    
+                    
+                    <!-- Check if there's a post on this day -->
+                    
+                        
+                            
+                            <td class="border px-4 py-2 bg-green-200">
+                                <a href="/2024/09/19/dealing_with_mental_health.html">25</a>
+                            </td>
+                        
+                    
+                        
+                            
+                            <td class="border px-4 py-2 bg-green-200">
+                                <a href="/2024/08/27/ux-designs.MARKUP">25</a>
+                            </td>
+                        
+                    
+
+                    <!-- If no post found, show an empty cell -->
+                    
+                
+                    
+
+                    
+                    
+                    
+                    <!-- Check if there's a post on this day -->
+                    
+                        
+                            
+                            <td class="border px-4 py-2 bg-green-200">
+                                <a href="/2024/09/19/dealing_with_mental_health.html">25</a>
+                            </td>
+                        
+                    
+                        
+                            
+                            <td class="border px-4 py-2 bg-green-200">
+                                <a href="/2024/08/27/ux-designs.MARKUP">25</a>
+                            </td>
+                        
+                    
+
+                    <!-- If no post found, show an empty cell -->
+                    
+                
+                    
+
+                    
+                    
+                    
+                    <!-- Check if there's a post on this day -->
+                    
+                        
+                            
+                            <td class="border px-4 py-2 bg-green-200">
+                                <a href="/2024/09/19/dealing_with_mental_health.html">25</a>
+                            </td>
+                        
+                    
+                        
+                            
+                            <td class="border px-4 py-2 bg-green-200">
+                                <a href="/2024/08/27/ux-designs.MARKUP">25</a>
+                            </td>
+                        
+                    
+
+                    <!-- If no post found, show an empty cell -->
+                    
+                
+                    
+
+                    
+                    
+                    
+                    <!-- Check if there's a post on this day -->
+                    
+                        
+                            
+                            <td class="border px-4 py-2 bg-green-200">
+                                <a href="/2024/09/19/dealing_with_mental_health.html">25</a>
+                            </td>
+                        
+                    
+                        
+                            
+                            <td class="border px-4 py-2 bg-green-200">
+                                <a href="/2024/08/27/ux-designs.MARKUP">25</a>
+                            </td>
+                        
+                    
+
+                    <!-- If no post found, show an empty cell -->
+                    
+                
+                    
+
+                    
+                    
+                    
+                    <!-- Check if there's a post on this day -->
+                    
+                        
+                            
+                            <td class="border px-4 py-2 bg-green-200">
+                                <a href="/2024/09/19/dealing_with_mental_health.html">25</a>
+                            </td>
+                        
+                    
+                        
+                            
+                            <td class="border px-4 py-2 bg-green-200">
+                                <a href="/2024/08/27/ux-designs.MARKUP">25</a>
+                            </td>
+                        
+                    
+
+                    <!-- If no post found, show an empty cell -->
+                    
+                
+                    
+
+                    
+                    
+                    
+                    <!-- Check if there's a post on this day -->
+                    
+                        
+                            
+                            <td class="border px-4 py-2 bg-green-200">
+                                <a href="/2024/09/19/dealing_with_mental_health.html">25</a>
+                            </td>
+                        
+                    
+                        
+                            
+                            <td class="border px-4 py-2 bg-green-200">
+                                <a href="/2024/08/27/ux-designs.MARKUP">25</a>
+                            </td>
+                        
+                    
+
+                    <!-- If no post found, show an empty cell -->
+                    
+                
+                    
+
+                    
+                    
+                    
+                    <!-- Check if there's a post on this day -->
+                    
+                        
+                            
+                            <td class="border px-4 py-2 bg-green-200">
+                                <a href="/2024/09/19/dealing_with_mental_health.html">25</a>
+                            </td>
+                        
+                    
+                        
+                            
+                            <td class="border px-4 py-2 bg-green-200">
+                                <a href="/2024/08/27/ux-designs.MARKUP">25</a>
+                            </td>
+                        
+                    
+
+                    <!-- If no post found, show an empty cell -->
+                    
+                
+            </tr>
+            
+            
+            <tr>
+                <!-- Loop over the days of the week (Sun to Sat) -->
+                
+                    
+
+                    
+                    
+                    
+                    <!-- Check if there's a post on this day -->
+                    
+                        
+                            
+                            <td class="border px-4 py-2 bg-green-200">
+                                <a href="/2024/09/19/dealing_with_mental_health.html">26</a>
+                            </td>
+                        
+                    
+                        
+                            
+                            <td class="border px-4 py-2 bg-green-200">
+                                <a href="/2024/08/27/ux-designs.MARKUP">26</a>
+                            </td>
+                        
+                    
+
+                    <!-- If no post found, show an empty cell -->
+                    
+                
+                    
+
+                    
+                    
+                    
+                    <!-- Check if there's a post on this day -->
+                    
+                        
+                            
+                            <td class="border px-4 py-2 bg-green-200">
+                                <a href="/2024/09/19/dealing_with_mental_health.html">26</a>
+                            </td>
+                        
+                    
+                        
+                            
+                            <td class="border px-4 py-2 bg-green-200">
+                                <a href="/2024/08/27/ux-designs.MARKUP">26</a>
+                            </td>
+                        
+                    
+
+                    <!-- If no post found, show an empty cell -->
+                    
+                
+                    
+
+                    
+                    
+                    
+                    <!-- Check if there's a post on this day -->
+                    
+                        
+                            
+                            <td class="border px-4 py-2 bg-green-200">
+                                <a href="/2024/09/19/dealing_with_mental_health.html">26</a>
+                            </td>
+                        
+                    
+                        
+                            
+                            <td class="border px-4 py-2 bg-green-200">
+                                <a href="/2024/08/27/ux-designs.MARKUP">26</a>
+                            </td>
+                        
+                    
+
+                    <!-- If no post found, show an empty cell -->
+                    
+                
+                    
+
+                    
+                    
+                    
+                    <!-- Check if there's a post on this day -->
+                    
+                        
+                            
+                            <td class="border px-4 py-2 bg-green-200">
+                                <a href="/2024/09/19/dealing_with_mental_health.html">26</a>
+                            </td>
+                        
+                    
+                        
+                            
+                            <td class="border px-4 py-2 bg-green-200">
+                                <a href="/2024/08/27/ux-designs.MARKUP">26</a>
+                            </td>
+                        
+                    
+
+                    <!-- If no post found, show an empty cell -->
+                    
+                
+                    
+
+                    
+                    
+                    
+                    <!-- Check if there's a post on this day -->
+                    
+                        
+                            
+                            <td class="border px-4 py-2 bg-green-200">
+                                <a href="/2024/09/19/dealing_with_mental_health.html">26</a>
+                            </td>
+                        
+                    
+                        
+                            
+                            <td class="border px-4 py-2 bg-green-200">
+                                <a href="/2024/08/27/ux-designs.MARKUP">26</a>
+                            </td>
+                        
+                    
+
+                    <!-- If no post found, show an empty cell -->
+                    
+                
+                    
+
+                    
+                    
+                    
+                    <!-- Check if there's a post on this day -->
+                    
+                        
+                            
+                            <td class="border px-4 py-2 bg-green-200">
+                                <a href="/2024/09/19/dealing_with_mental_health.html">26</a>
+                            </td>
+                        
+                    
+                        
+                            
+                            <td class="border px-4 py-2 bg-green-200">
+                                <a href="/2024/08/27/ux-designs.MARKUP">26</a>
+                            </td>
+                        
+                    
+
+                    <!-- If no post found, show an empty cell -->
+                    
+                
+                    
+
+                    
+                    
+                    
+                    <!-- Check if there's a post on this day -->
+                    
+                        
+                            
+                            <td class="border px-4 py-2 bg-green-200">
+                                <a href="/2024/09/19/dealing_with_mental_health.html">26</a>
+                            </td>
+                        
+                    
+                        
+                            
+                            <td class="border px-4 py-2 bg-green-200">
+                                <a href="/2024/08/27/ux-designs.MARKUP">26</a>
+                            </td>
+                        
+                    
+
+                    <!-- If no post found, show an empty cell -->
+                    
+                
+            </tr>
+            
+            
+            <tr>
+                <!-- Loop over the days of the week (Sun to Sat) -->
+                
+                    
+
+                    
+                    
+                    
+                    <!-- Check if there's a post on this day -->
+                    
+                        
+                            
+                            <td class="border px-4 py-2 bg-green-200">
+                                <a href="/2024/09/19/dealing_with_mental_health.html">27</a>
+                            </td>
+                        
+                    
+                        
+                            
+                            <td class="border px-4 py-2 bg-green-200">
+                                <a href="/2024/08/27/ux-designs.MARKUP">27</a>
+                            </td>
+                        
+                    
+
+                    <!-- If no post found, show an empty cell -->
+                    
+                
+                    
+
+                    
+                    
+                    
+                    <!-- Check if there's a post on this day -->
+                    
+                        
+                            
+                            <td class="border px-4 py-2 bg-green-200">
+                                <a href="/2024/09/19/dealing_with_mental_health.html">27</a>
+                            </td>
+                        
+                    
+                        
+                            
+                            <td class="border px-4 py-2 bg-green-200">
+                                <a href="/2024/08/27/ux-designs.MARKUP">27</a>
+                            </td>
+                        
+                    
+
+                    <!-- If no post found, show an empty cell -->
+                    
+                
+                    
+
+                    
+                    
+                    
+                    <!-- Check if there's a post on this day -->
+                    
+                        
+                            
+                            <td class="border px-4 py-2 bg-green-200">
+                                <a href="/2024/09/19/dealing_with_mental_health.html">27</a>
+                            </td>
+                        
+                    
+                        
+                            
+                            <td class="border px-4 py-2 bg-green-200">
+                                <a href="/2024/08/27/ux-designs.MARKUP">27</a>
+                            </td>
+                        
+                    
+
+                    <!-- If no post found, show an empty cell -->
+                    
+                
+                    
+
+                    
+                    
+                    
+                    <!-- Check if there's a post on this day -->
+                    
+                        
+                            
+                            <td class="border px-4 py-2 bg-green-200">
+                                <a href="/2024/09/19/dealing_with_mental_health.html">27</a>
+                            </td>
+                        
+                    
+                        
+                            
+                            <td class="border px-4 py-2 bg-green-200">
+                                <a href="/2024/08/27/ux-designs.MARKUP">27</a>
+                            </td>
+                        
+                    
+
+                    <!-- If no post found, show an empty cell -->
+                    
+                
+                    
+
+                    
+                    
+                    
+                    <!-- Check if there's a post on this day -->
+                    
+                        
+                            
+                            <td class="border px-4 py-2 bg-green-200">
+                                <a href="/2024/09/19/dealing_with_mental_health.html">27</a>
+                            </td>
+                        
+                    
+                        
+                            
+                            <td class="border px-4 py-2 bg-green-200">
+                                <a href="/2024/08/27/ux-designs.MARKUP">27</a>
+                            </td>
+                        
+                    
+
+                    <!-- If no post found, show an empty cell -->
+                    
+                
+                    
+
+                    
+                    
+                    
+                    <!-- Check if there's a post on this day -->
+                    
+                        
+                            
+                            <td class="border px-4 py-2 bg-green-200">
+                                <a href="/2024/09/19/dealing_with_mental_health.html">27</a>
+                            </td>
+                        
+                    
+                        
+                            
+                            <td class="border px-4 py-2 bg-green-200">
+                                <a href="/2024/08/27/ux-designs.MARKUP">27</a>
+                            </td>
+                        
+                    
+
+                    <!-- If no post found, show an empty cell -->
+                    
+                
+                    
+
+                    
+                    
+                    
+                    <!-- Check if there's a post on this day -->
+                    
+                        
+                            
+                            <td class="border px-4 py-2 bg-green-200">
+                                <a href="/2024/09/19/dealing_with_mental_health.html">27</a>
+                            </td>
+                        
+                    
+                        
+                            
+                            <td class="border px-4 py-2 bg-green-200">
+                                <a href="/2024/08/27/ux-designs.MARKUP">27</a>
+                            </td>
+                        
+                    
+
+                    <!-- If no post found, show an empty cell -->
+                    
+                
+            </tr>
+            
+            
+            <tr>
+                <!-- Loop over the days of the week (Sun to Sat) -->
+                
+                    
+
+                    
+                    
+                    
+                    <!-- Check if there's a post on this day -->
+                    
+                        
+                            
+                            <td class="border px-4 py-2 bg-green-200">
+                                <a href="/2024/09/19/dealing_with_mental_health.html">28</a>
+                            </td>
+                        
+                    
+                        
+                            
+                            <td class="border px-4 py-2 bg-green-200">
+                                <a href="/2024/08/27/ux-designs.MARKUP">28</a>
+                            </td>
+                        
+                    
+
+                    <!-- If no post found, show an empty cell -->
+                    
+                
+                    
+
+                    
+                    
+                    
+                    <!-- Check if there's a post on this day -->
+                    
+                        
+                            
+                            <td class="border px-4 py-2 bg-green-200">
+                                <a href="/2024/09/19/dealing_with_mental_health.html">28</a>
+                            </td>
+                        
+                    
+                        
+                            
+                            <td class="border px-4 py-2 bg-green-200">
+                                <a href="/2024/08/27/ux-designs.MARKUP">28</a>
+                            </td>
+                        
+                    
+
+                    <!-- If no post found, show an empty cell -->
+                    
+                
+                    
+
+                    
+                    
+                    
+                    <!-- Check if there's a post on this day -->
+                    
+                        
+                            
+                            <td class="border px-4 py-2 bg-green-200">
+                                <a href="/2024/09/19/dealing_with_mental_health.html">28</a>
+                            </td>
+                        
+                    
+                        
+                            
+                            <td class="border px-4 py-2 bg-green-200">
+                                <a href="/2024/08/27/ux-designs.MARKUP">28</a>
+                            </td>
+                        
+                    
+
+                    <!-- If no post found, show an empty cell -->
+                    
+                
+                    
+
+                    
+                    
+                    
+                    <!-- Check if there's a post on this day -->
+                    
+                        
+                            
+                            <td class="border px-4 py-2 bg-green-200">
+                                <a href="/2024/09/19/dealing_with_mental_health.html">28</a>
+                            </td>
+                        
+                    
+                        
+                            
+                            <td class="border px-4 py-2 bg-green-200">
+                                <a href="/2024/08/27/ux-designs.MARKUP">28</a>
+                            </td>
+                        
+                    
+
+                    <!-- If no post found, show an empty cell -->
+                    
+                
+                    
+
+                    
+                    
+                    
+                    <!-- Check if there's a post on this day -->
+                    
+                        
+                            
+                            <td class="border px-4 py-2 bg-green-200">
+                                <a href="/2024/09/19/dealing_with_mental_health.html">28</a>
+                            </td>
+                        
+                    
+                        
+                            
+                            <td class="border px-4 py-2 bg-green-200">
+                                <a href="/2024/08/27/ux-designs.MARKUP">28</a>
+                            </td>
+                        
+                    
+
+                    <!-- If no post found, show an empty cell -->
+                    
+                
+                    
+
+                    
+                    
+                    
+                    <!-- Check if there's a post on this day -->
+                    
+                        
+                            
+                            <td class="border px-4 py-2 bg-green-200">
+                                <a href="/2024/09/19/dealing_with_mental_health.html">28</a>
+                            </td>
+                        
+                    
+                        
+                            
+                            <td class="border px-4 py-2 bg-green-200">
+                                <a href="/2024/08/27/ux-designs.MARKUP">28</a>
+                            </td>
+                        
+                    
+
+                    <!-- If no post found, show an empty cell -->
+                    
+                
+                    
+
+                    
+                    
+                    
+                    <!-- Check if there's a post on this day -->
+                    
+                        
+                            
+                            <td class="border px-4 py-2 bg-green-200">
+                                <a href="/2024/09/19/dealing_with_mental_health.html">28</a>
+                            </td>
+                        
+                    
+                        
+                            
+                            <td class="border px-4 py-2 bg-green-200">
+                                <a href="/2024/08/27/ux-designs.MARKUP">28</a>
+                            </td>
+                        
+                    
+
+                    <!-- If no post found, show an empty cell -->
+                    
+                
+            </tr>
+            
+            
+            <tr>
+                <!-- Loop over the days of the week (Sun to Sat) -->
+                
+                    
+
+                    
+                    
+                    
+                    <!-- Check if there's a post on this day -->
+                    
+                        
+                            
+                            <td class="border px-4 py-2 bg-green-200">
+                                <a href="/2024/09/19/dealing_with_mental_health.html">29</a>
+                            </td>
+                        
+                    
+                        
+                            
+                            <td class="border px-4 py-2 bg-green-200">
+                                <a href="/2024/08/27/ux-designs.MARKUP">29</a>
+                            </td>
+                        
+                    
+
+                    <!-- If no post found, show an empty cell -->
+                    
+                
+                    
+
+                    
+                    
+                    
+                    <!-- Check if there's a post on this day -->
+                    
+                        
+                            
+                            <td class="border px-4 py-2 bg-green-200">
+                                <a href="/2024/09/19/dealing_with_mental_health.html">29</a>
+                            </td>
+                        
+                    
+                        
+                            
+                            <td class="border px-4 py-2 bg-green-200">
+                                <a href="/2024/08/27/ux-designs.MARKUP">29</a>
+                            </td>
+                        
+                    
+
+                    <!-- If no post found, show an empty cell -->
+                    
+                
+                    
+
+                    
+                    
+                    
+                    <!-- Check if there's a post on this day -->
+                    
+                        
+                            
+                            <td class="border px-4 py-2 bg-green-200">
+                                <a href="/2024/09/19/dealing_with_mental_health.html">29</a>
+                            </td>
+                        
+                    
+                        
+                            
+                            <td class="border px-4 py-2 bg-green-200">
+                                <a href="/2024/08/27/ux-designs.MARKUP">29</a>
+                            </td>
+                        
+                    
+
+                    <!-- If no post found, show an empty cell -->
+                    
+                
+                    
+
+                    
+                    
+                    
+                    <!-- Check if there's a post on this day -->
+                    
+                        
+                            
+                            <td class="border px-4 py-2 bg-green-200">
+                                <a href="/2024/09/19/dealing_with_mental_health.html">29</a>
+                            </td>
+                        
+                    
+                        
+                            
+                            <td class="border px-4 py-2 bg-green-200">
+                                <a href="/2024/08/27/ux-designs.MARKUP">29</a>
+                            </td>
+                        
+                    
+
+                    <!-- If no post found, show an empty cell -->
+                    
+                
+                    
+
+                    
+                    
+                    
+                    <!-- Check if there's a post on this day -->
+                    
+                        
+                            
+                            <td class="border px-4 py-2 bg-green-200">
+                                <a href="/2024/09/19/dealing_with_mental_health.html">29</a>
+                            </td>
+                        
+                    
+                        
+                            
+                            <td class="border px-4 py-2 bg-green-200">
+                                <a href="/2024/08/27/ux-designs.MARKUP">29</a>
+                            </td>
+                        
+                    
+
+                    <!-- If no post found, show an empty cell -->
+                    
+                
+                    
+
+                    
+                    
+                    
+                    <!-- Check if there's a post on this day -->
+                    
+                        
+                            
+                            <td class="border px-4 py-2 bg-green-200">
+                                <a href="/2024/09/19/dealing_with_mental_health.html">29</a>
+                            </td>
+                        
+                    
+                        
+                            
+                            <td class="border px-4 py-2 bg-green-200">
+                                <a href="/2024/08/27/ux-designs.MARKUP">29</a>
+                            </td>
+                        
+                    
+
+                    <!-- If no post found, show an empty cell -->
+                    
+                
+                    
+
+                    
+                    
+                    
+                    <!-- Check if there's a post on this day -->
+                    
+                        
+                            
+                            <td class="border px-4 py-2 bg-green-200">
+                                <a href="/2024/09/19/dealing_with_mental_health.html">29</a>
+                            </td>
+                        
+                    
+                        
+                            
+                            <td class="border px-4 py-2 bg-green-200">
+                                <a href="/2024/08/27/ux-designs.MARKUP">29</a>
+                            </td>
+                        
+                    
+
+                    <!-- If no post found, show an empty cell -->
+                    
+                
+            </tr>
+            
+            
+            <tr>
+                <!-- Loop over the days of the week (Sun to Sat) -->
+                
+                    
+
+                    
+                    
+                    
+                    <!-- Check if there's a post on this day -->
+                    
+                        
+                            
+                            <td class="border px-4 py-2 bg-green-200">
+                                <a href="/2024/09/19/dealing_with_mental_health.html">30</a>
+                            </td>
+                        
+                    
+                        
+                            
+                            <td class="border px-4 py-2 bg-green-200">
+                                <a href="/2024/08/27/ux-designs.MARKUP">30</a>
+                            </td>
+                        
+                    
+
+                    <!-- If no post found, show an empty cell -->
+                    
+                
+                    
+
+                    
+                    
+                    
+                    <!-- Check if there's a post on this day -->
+                    
+                        
+                            
+                            <td class="border px-4 py-2 bg-green-200">
+                                <a href="/2024/09/19/dealing_with_mental_health.html">30</a>
+                            </td>
+                        
+                    
+                        
+                            
+                            <td class="border px-4 py-2 bg-green-200">
+                                <a href="/2024/08/27/ux-designs.MARKUP">30</a>
+                            </td>
+                        
+                    
+
+                    <!-- If no post found, show an empty cell -->
+                    
+                
+                    
+
+                    
+                    
+                    
+                    <!-- Check if there's a post on this day -->
+                    
+                        
+                            
+                            <td class="border px-4 py-2 bg-green-200">
+                                <a href="/2024/09/19/dealing_with_mental_health.html">30</a>
+                            </td>
+                        
+                    
+                        
+                            
+                            <td class="border px-4 py-2 bg-green-200">
+                                <a href="/2024/08/27/ux-designs.MARKUP">30</a>
+                            </td>
+                        
+                    
+
+                    <!-- If no post found, show an empty cell -->
+                    
+                
+                    
+
+                    
+                    
+                    
+                    <!-- Check if there's a post on this day -->
+                    
+                        
+                            
+                            <td class="border px-4 py-2 bg-green-200">
+                                <a href="/2024/09/19/dealing_with_mental_health.html">30</a>
+                            </td>
+                        
+                    
+                        
+                            
+                            <td class="border px-4 py-2 bg-green-200">
+                                <a href="/2024/08/27/ux-designs.MARKUP">30</a>
+                            </td>
+                        
+                    
+
+                    <!-- If no post found, show an empty cell -->
+                    
+                
+                    
+
+                    
+                    
+                    
+                    <!-- Check if there's a post on this day -->
+                    
+                        
+                            
+                            <td class="border px-4 py-2 bg-green-200">
+                                <a href="/2024/09/19/dealing_with_mental_health.html">30</a>
+                            </td>
+                        
+                    
+                        
+                            
+                            <td class="border px-4 py-2 bg-green-200">
+                                <a href="/2024/08/27/ux-designs.MARKUP">30</a>
+                            </td>
+                        
+                    
+
+                    <!-- If no post found, show an empty cell -->
+                    
+                
+                    
+
+                    
+                    
+                    
+                    <!-- Check if there's a post on this day -->
+                    
+                        
+                            
+                            <td class="border px-4 py-2 bg-green-200">
+                                <a href="/2024/09/19/dealing_with_mental_health.html">30</a>
+                            </td>
+                        
+                    
+                        
+                            
+                            <td class="border px-4 py-2 bg-green-200">
+                                <a href="/2024/08/27/ux-designs.MARKUP">30</a>
+                            </td>
+                        
+                    
+
+                    <!-- If no post found, show an empty cell -->
+                    
+                
+                    
+
+                    
+                    
+                    
+                    <!-- Check if there's a post on this day -->
+                    
+                        
+                            
+                            <td class="border px-4 py-2 bg-green-200">
+                                <a href="/2024/09/19/dealing_with_mental_health.html">30</a>
+                            </td>
+                        
+                    
+                        
+                            
+                            <td class="border px-4 py-2 bg-green-200">
+                                <a href="/2024/08/27/ux-designs.MARKUP">30</a>
+                            </td>
+                        
+                    
+
+                    <!-- If no post found, show an empty cell -->
+                    
+                
+            </tr>
+            
+        </tbody>
+    </table>
+</div>
+    </main>
+
+</body>
+</html>

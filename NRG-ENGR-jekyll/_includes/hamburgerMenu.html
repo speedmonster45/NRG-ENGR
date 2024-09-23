@@ -1,0 +1,33 @@
+<head>
+    <link rel="stylesheet" href="assets/css/components.css">
+</head>
+<script>
+    function toggleMenu() {
+        const menus = document.getElementsByClassName('menu');
+        for(let i = 0; i < menus.length; i++) {
+            menus[i].classList.toggle('hidden');
+        }
+    }
+</script>    
+
+<div id="hamburger" class="hamburger space-y-1 cursor-pointer" onclick="toggleMenu()">
+    <div class="w-8 h-1 bg-white"></div>
+    <div class="w-8 h-1 bg-white"></div>
+    <div class="w-8 h-1 bg-white"></div>
+</div>
+
+<nav class="menu hidden">
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="contact.html">Contact</a></li>
+    </ul>
+</nav>
+
+<div class="menu hidden absolute top-16 right-5 bg-black bg-opacity-70 text-white p-4 rounded-lg space-y-2">
+    <a href="index.html" class="block">Home</a>
+    <a href="about.html" class="block">About</a>
+    <a href="contact.html" class="block">Contact</a>
+    <a href="services.html" class="block">Services</a>
+</div>

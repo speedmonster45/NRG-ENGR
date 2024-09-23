@@ -1,0 +1,51 @@
+<!-- _includes/BlogCalendar.html -->
+<div class="blog-calendar">
+    <h2 class="text-3xl font-bold mb-5">Blog Upload Calendar</h2>
+    <table class="table-auto w-full border-collapse border border-gray-300">
+        <thead>
+            <tr class="bg-gray-200">
+                <th class="border px-4 py-2">Sun</th>
+                <th class="border px-4 py-2">Mon</th>
+                <th class="border px-4 py-2">Tue</th>
+                <th class="border px-4 py-2">Wed</th>
+                <th class="border px-4 py-2">Thu</th>
+                <th class="border px-4 py-2">Fri</th>
+                <th class="border px-4 py-2">Sat</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% assign month = '09' %}
+            {% assign year = '2024' %}
+            {% assign daysInMonth = 30 %}
+
+            <!-- Loop over the days of the month -->
+            {% for day in (1..daysInMonth) %}
+            {% assign post_found = false %}
+            <tr>
+                <!-- Loop over the days of the week (Sun to Sat) -->
+                {% for weekday in (0..6) %}
+                    {% assign post_found = false %}
+
+                    {% assign day_formatted = day | prepend: "0" | slice: -2 %}
+                    {% assign current_date = year | append: '-' | append: month | append: '-' | append: day_formatted %}
+                    
+                    <!-- Check if there's a post on this day -->
+                    {% for post in site.posts %}
+                        {% if post.date | date: "%Y-%m-%d" == current_date %}
+                            {% assign post_found = true %}
+                            <td class="border px-4 py-2 bg-green-200">
+                                <a href="{{ post.url }}">{{ day }}</a>
+                            </td>
+                        {% endif %}
+                    {% endfor %}
+
+                    <!-- If no post found, show an empty cell -->
+                    {% if post_found == false %}
+                        <td class="border px-4 py-2">{{ day }}</td>
+                    {% endif %}
+                {% endfor %}
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</div>

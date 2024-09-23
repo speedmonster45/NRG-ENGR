@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ page.title }} - NRG Engineering</title>
+    <link rel="stylesheet" href="/assets/css/output.css">
+    <script src="/assets/js/hamburgerMenu.js"></script>
+    <!-- Tailwind CSS Output -->
+</head>
+<body class="bg-gray-100 font-sans">
+
+    <!-- Include the splash screen for login and TOS -->
+	{% include splashScreen.html %}   
+    <!-- Banner with hamburger -->
+    <div class="banner bg-cover bg-center h-64 flex justify-between items-center px-5" style="background-image: url('/assets/images/home_banner.jpeg');">
+        <h1 class="text-white text-5xl font-bold drop-shadow-lg">NRG-ENGR</h1>
+        {% include hamburgerMenu.html %}
+    </div>
+
+    <!-- Page content -->
+    <main>
+        {{ content }}
+
+        <!-- Include Recent Blog Posts -->
+        {% include recentBlogPosts.html %}
+
+        <!-- Include Blog Upload Calendar -->
+        {% include blogCalendar.html %}
+    </main>
+
+</body>
+</html>

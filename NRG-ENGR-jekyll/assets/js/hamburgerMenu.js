@@ -1,5 +1,5 @@
 function loadHamburgerMenu() {
-    fetch('assets/includes/hamburgerMenu.html')
+    fetch('_includes/hamburgerMenu.html')
         .then(response => response.text())
         .then(data => {
             document.getElementById('hamburger-container').innerHTML = data;

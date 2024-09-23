@@ -18,6 +18,9 @@ jobs:
       with:
         ruby-version: '3.0'  # Specify your Ruby version here
 
+    - name: Install Bundler 2.5.11
+      run: gem install bundler:2.5.11
+
     - name: Cache Gems
       uses: actions/cache@v2
       with:

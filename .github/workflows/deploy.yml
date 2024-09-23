@@ -49,6 +49,7 @@ jobs:
 
     - name: Sync files to S3
       run: |
+        cd NRG-ENGR-jekyll
         aws s3 sync ./_site/ s3://nrg-engr.blog --region ${{ secrets.AWS_REGION }} --delete
       env:
         AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}

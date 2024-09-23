@@ -1,0 +1,37 @@
+<script>
+            function showSplashScreen() {
+            const splashScreen = document.getElementById('splashScreen');
+            splashScreen.classList.remove('hidden');
+        }
+
+        function acceptTerms() {
+            const splashScreen = document.getElementById('splashScreen');
+            splashScreen.classList.add('hidden');
+        }
+
+        window.onload = function() {
+            const firstVisit = !localStorage.getItem('visited');
+            if (firstVisit) {
+                showSplashScreen();
+                localStorage.setItem('visited', 'true');
+            }
+        }
+</script>
+
+<!-- Include the splash screen for login and TOS -->
+    <div id="splashScreen" class="fixed inset-0 bg-black bg-opacity-80 flex items-center justify-center text-white hidden">
+        <div class="text-center space-y-4">
+            <h2 class="text-3xl font-bold">stay out of the Woodland Blog, this is my home</h2>
+            <p>Please log in to continue:</p>
+            <form class="space-y-2">
+                <input type="text" placeholder="Username" required class="w-full p-2 text-black rounded">
+                <input type="password" placeholder="Password" required class="w-full p-2 text-black rounded">
+                <button type="submit" class="block w-full bg-green-600 text-white py-2 rounded">Login</button>
+            </form>
+            <p>
+                <input type="checkbox" required class="mr-2">
+                I agree to the <a href="#" class="underline">Terms of Service</a>
+            </p>
+            <button onclick="acceptTerms()" class="bg-green-600 py-2 px-4 rounded">Continue</button>
+        </div>
+    </div>

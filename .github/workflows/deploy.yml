@@ -28,6 +28,7 @@ jobs:
 
     - name: Install Dependencies
       run: |
+        cd NRG-ENGR-jekyll
         bundle config set --local path 'vendor/bundle'
         bundle install
 

@@ -1,0 +1,51 @@
+#spotify-widget {
+   position: fixed;
+   bottom: 0;
+   left: 0;
+   margin-left: 1rem;
+   margin-bottom: 1rem;
+   transition: transform 0.3s ease-in-out;
+}
+
+.spotify-logo {
+   width: 50px;
+   height: 50px;
+   cursor: pointer;
+   transition: transform 0.3s;
+}
+
+/* Hover Effects */
+.icon-wrapper:hover + .bubble-content,
+.bubble-content:hover {
+   display: block;
+   transform: scale(1.2); /* Enlarges */
+   transition: transform 0.3s ease-in-out;
+}
+
+.bubble-content {
+   display: none;
+   position: absolute;
+   bottom: 60px;
+   left: 0;
+   background-color: rgba(0, 128, 0, 0.9);
+   color: white;
+   padding: 1rem;
+   border-radius: 8px;
+   width: 200px;
+}
+
+/* Animation for Green Bubble to Center */
+@keyframes bubble-pop {
+   0% {
+      transform: scale(0);
+      opacity: 0;
+   }
+   100% {
+      transform: scale(1);
+      opacity: 1;
+   }
+}
+
+#spotify-bubble.bubble-active {
+   animation: bubble-pop 0.5s forwards;
+}

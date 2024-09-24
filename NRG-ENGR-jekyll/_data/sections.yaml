@@ -1,0 +1,20 @@
+# _data/sections.yml
+sections:
+  - name: Home
+    url: "/index.html"
+    description: "Back to homepage"
+  - name: About
+    url: "/about.html"
+    description: "Learn more about me"
+  - name: Services
+    url: "/services.html"
+    description: "What I offer"
+  - name: Contact
+    url: "/contact.html"
+    description: "Get in touch"
+  - name: Projects
+    url: "/projects.html"
+    description: "My recent work"  - name: Private Projects
+    url: "/private-projects.html"
+    description: "For logged-in users only"
+    visible: false # Onl

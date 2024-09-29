@@ -2,3 +2,23 @@
 .jekyll-cache
 .jekyll-metadata
 vendor
+# Ignore macOS system files
+.DS_Store
+
+# Ignore VSCode workspace settings (if not needed in repo)
+.code-workspace
+
+# Ignore environment variable files (contains sensitive information)
+.env
+.env.swp
+
+# Ignore Jekyll cache and build folder
+.jekyll-cache/
+_site/
+
+# Ignore Python virtual environment
+venv/
+
+# Ignore any temporary swap or backup files
+*.swp
+*.swo
